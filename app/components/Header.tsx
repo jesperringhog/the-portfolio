@@ -1,43 +1,29 @@
-export const Header = () => {
-  return (
-    <>
-      <header className="p-6 border">
-        <nav className="flex gap-2 justify-between">
-          <div className="flex gap-2">
-            <a href="#webshop">Webshop</a>
-            <a href="#todos">Todos</a>
-          </div>
-          <div className="flex gap-1">
-            <div className="w-10 h-10 bg-black"></div>
-            <div className="">
-              <div className="w-10 h-10 bg-black"></div>
-              <div className=""></div>
-            </div>
-          </div>
-          <div className="contact-btn-container">
-            <a href="/graphicDesign.html">Graphic design</a>
-            <a href="#footer">Contact</a>
-          </div>
+import { JrLogo } from "./JrLogo";
 
-          <div className="menuContainer">
-            <button id="menuBtn">Menu</button>
-            <ul hidden>
-              <li>
-                <a href="#webshop">Webshop</a>
-              </li>
-              <li>
-                <a href="#todos">Todos</a>
-              </li>
-              <li>
-                <a href="/graphicdesign.html">Graphic design</a>
-              </li>
-              <li>
-                <a href="#footer">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </>
-  );
-};
+export const Header = () => (
+  <header className="p-5">
+    <nav className="grid grid-cols-3 items-center w-full">
+      <div></div>
+      <JrLogo></JrLogo>
+      <div className="flex flex-1 justify-start gap-20">
+        <a className="">Projects</a> {/* länka till section -> projects */}
+        <a>Graphic design</a> {/*onClick -> ändra state för header + main*/}
+        <a>Contact</a>
+      </div>
+      {/* <div className="">
+        <button id="menuBtn">Menu</button>
+        <ul hidden>
+          <li>
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Graphic design</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+        </ul>
+      </div> */}
+    </nav>
+  </header>
+);

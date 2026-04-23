@@ -1,23 +1,47 @@
-export const FeProjects = () => (
-  <>
-    <section className="h-screen">
-      <div className="bg-amber-200">
-        <a
-          href="https://github.com/jesperringhog/webshop-godisrattan"
-          className="">
-          <i className=""></i>
-        </a>
-        <iframe src="https://webshop-godisrattan.vercel.app/" className=""></iframe>
-      </div>
-    </section>
+"use client";
 
-    <section className="">
-      <div className="">
-        <a href="https://github.com/jesperringhog/the-todos.git" className="">
-          <i className=""></i>
+import { ArrowsPointingOutIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
+import { FaGithub } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+
+const projectHtml = (vercel: string, github: string) => {
+  const [hover, setHover] = useState(false);
+
+  return (
+    <div className="flex flex-col flex-1 mx-20 my-10 rounded">
+      <iframe src={vercel} className="flex-1 rounded-t-xl"></iframe>
+      <div className="flex justify-end bg-white rounded-b-xl">
+        <a
+          href={github}
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => {
+            setHover(false);
+          }}
+        >
+          {hover ? (
+            <FiGithub className="fill-black w-8 h-8 m-5" />
+          ) : (
+            <FaGithub className="w-8 h-8 m-5" />
+          )}
         </a>
-        <iframe src="https://jesperringhog.github.io/the-todos/"></iframe>
+        <a href={vercel}> {/* fullscreen */}
+          <ArrowsPointingOutIcon className="w-8 h-8 m-5" />
+        </a>
       </div>
-    </section>
-  </>
+    </div>
+  );
+};
+
+export const FeProjects = () => (
+  <section className="flex flex-1">
+    {projectHtml(
+      "https://webshop-godisrattan.vercel.app/",
+      "https://github.com/jesperringhog/webshop-godisrattan",
+    )}
+    {projectHtml(
+      "https://jesperringhog.github.io/the-todos/",
+      "https://github.com/jesperringhog/the-todos.git",
+    )}
+  </section>
 );

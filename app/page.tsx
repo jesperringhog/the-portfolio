@@ -1,15 +1,15 @@
-import { FeProjects } from "./components/FeProjects";
-import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { FeProjects } from "./components/FeProjects";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="">
-      <main className="flex-1">
-        <Header/>
-        <FeProjects/>
-        <Footer/>
-      </main>
-    </div>
+    <main className="flex flex-col min-h-screen">
+      <Header />
+      <FeProjects/>
+      <Footer />
+    </main>
   );
-}
+};
+
+export default Home;
