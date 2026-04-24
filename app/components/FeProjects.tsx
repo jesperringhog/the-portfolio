@@ -5,13 +5,13 @@ import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 
-const projectHtml = (vercel: string, github: string) => {
+const feProjectHtml = (vercel: string, github: string) => {
   const [hover, setHover] = useState(false);
 
   return (
     <div className="flex flex-col flex-1 mx-20 my-10 rounded">
       <iframe src={vercel} className="flex-1 rounded-t-xl"></iframe>
-      <div className="flex justify-end bg-white rounded-b-xl">
+      <div className="flex justify-end bg-black rounded-b-xl">
         <a
           href={github}
           onMouseEnter={() => setHover(true)}
@@ -20,13 +20,13 @@ const projectHtml = (vercel: string, github: string) => {
           }}
         >
           {hover ? (
-            <FiGithub className="fill-black w-8 h-8 m-5" />
+            <FiGithub className="fill-white w-8 h-8 m-5" />
           ) : (
-            <FaGithub className="w-8 h-8 m-5" />
+            <FaGithub className="w-8 h-8 m-5 fill-white" />
           )}
         </a>
-        <a href={vercel}> {/* fullscreen */}
-          <ArrowsPointingOutIcon className="w-8 h-8 m-5" />
+        <a href={vercel}>
+          <ArrowsPointingOutIcon className="w-8 h-8 m-5 fill-white" />
         </a>
       </div>
     </div>
@@ -34,14 +34,14 @@ const projectHtml = (vercel: string, github: string) => {
 };
 
 export const FeProjects = () => (
-  <section className="flex flex-1">
-    {projectHtml(
+  <>
+    {feProjectHtml(
       "https://webshop-godisrattan.vercel.app/",
       "https://github.com/jesperringhog/webshop-godisrattan",
     )}
-    {projectHtml(
+    {feProjectHtml(
       "https://jesperringhog.github.io/the-todos/",
       "https://github.com/jesperringhog/the-todos.git",
     )}
-  </section>
+  </>
 );

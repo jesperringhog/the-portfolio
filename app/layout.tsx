@@ -7,7 +7,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className="flex flex-col bg-gray-700">{children}</body>
+      <body className="flex flex-col">{children}</body>
     </html>
   );
 }

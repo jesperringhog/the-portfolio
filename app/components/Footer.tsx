@@ -2,7 +2,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => (
-    <footer className="flex h-20">
+    <footer id="contact" className="footer-shape flex h-20 bg-white">
       <div className="flex flex-1 justify-around items-center">
         <a href="https://github.com/jesperringhog">
           <FaGithub className="w-8 h-8" />
