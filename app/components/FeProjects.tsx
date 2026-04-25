@@ -9,7 +9,7 @@ const feProjectHtml = (vercel: string, github: string) => {
   const [hover, setHover] = useState(false);
 
   return (
-    <div className="flex flex-col flex-1 mx-20 my-10 rounded">
+    <div className="flex flex-col flex-1">
       <iframe src={vercel} className="flex-1 rounded-t-xl"></iframe>
       <div className="flex justify-end bg-black rounded-b-xl">
         <a

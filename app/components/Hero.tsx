@@ -12,7 +12,7 @@ export const Hero = () => (
         </p>
       </div>
       <img
-        src="assets/profilbild.jpg"
+        src="profilbild.jpg"
         alt="Jesper Ringhög"
         className="size-80 rounded-r-xl"
       />
