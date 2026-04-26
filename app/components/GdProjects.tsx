@@ -1,11 +1,15 @@
 "use client";
 
 import { logotypes } from "../data/logotypes";
+import { GdProject } from "../models/GdProject";
 
-export const GdProjects = () => (
+const GdProjectsHtml = (projects: GdProject[]) => (
   <div className="flex flex-wrap flex-1 justify-center gap-10">
-    {logotypes.map((Logo, i) => (
-      <Logo key={i} className="size-50 bg-white rounded-xl hover:text-green-500"/>
+    {projects.map((p, i) => (
+      <img key={i} src={p.svg} className="size-50 bg-white rounded-xl"/>
     ))}
   </div>
 );
+
+export const GdProjects = () => 
+    GdProjectsHtml(logotypes);
