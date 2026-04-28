@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "logos": "svgo ./assets/logotype -o ./assets/logotype && svgr --typescript --icon --filename-case pascal ./assets/logotype --out-dir ./components/logos"
+    "logo": "svgr assets/logotype --out-dir logos",
+    "heading": "svgr assets/headings --out-dir headings"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

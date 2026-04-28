@@ -1,3 +1,3 @@
 export type GdProject = {
-    svg: string,
+    src: string,
 }
