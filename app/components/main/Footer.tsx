@@ -1,22 +1,14 @@
-import { EnvelopeIcon } from "@heroicons/react/24/solid";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { IconComponent } from "./Icon";
 
 export const Footer = () => (
-    <footer id="contact" className="footer-shape flex h-20 bg-white">
-      <div className="flex flex-1 justify-around items-center">
-        <a href="https://github.com/jesperringhog">
-          <FaGithub className="w-8 h-8" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jesper-ringh%C3%B6g-649104125/"
-
-        >
-          <FaLinkedin className="w-8 h-8"/>
-        </a>
-        <a href="mailto:jesper.ringhog@gmail.com" className="">
-          <EnvelopeIcon className="w-8 h-8" />
-        </a>
-        <p>Jesper Ringhög</p>
+    <footer id="contact" className="flex items-center footer-shape h-20 bg-white">
+      <div className="flex-1"></div>
+      <div className="flex gap-20">
+        <IconComponent href="https://github.com/jesperringhog" reactIcon={FaGithub} className=""/>
+        <IconComponent href="https://www.linkedin.com/in/jesper-ringh%C3%B6g-649104125/" reactIcon={FaLinkedin} className="" />
+        <IconComponent href="mailto:jesper.ringhog@gmail.com" reactIcon={FaEnvelope} className=""/>
       </div>
+        <p className="flex flex-1 justify-center">Jesper Ringhög</p>
     </footer>
 );

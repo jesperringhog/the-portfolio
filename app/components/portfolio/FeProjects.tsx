@@ -1,47 +1,41 @@
 "use client";
 
-import { ArrowsPointingOutIcon } from "@heroicons/react/24/solid";
-import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
+import { IconComponent } from "../main/Icon";
+import { BsArrowsFullscreen } from "react-icons/bs";
 
-const feProjectHtml = (vercel: string, github: string) => {
-  const [hover, setHover] = useState(false);
-
-  return (
-    <div className="flex flex-col flex-1 mx-20 mt-40 mb-20">
-      <iframe src={vercel} className="flex-1 rounded-t-xl"></iframe>
-      <div className="flex justify-end bg-black rounded-b-xl">
-        <a
-          href={github}
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => {
-            setHover(false);
-          }}
-        >
-          {hover ? (
-            <FiGithub className="fill-white w-8 h-8 m-5" />
-          ) : (
-            <FaGithub className="w-8 h-8 m-5 fill-white" />
-          )}
-        </a>
-        <a href={vercel}>
-          <ArrowsPointingOutIcon className="w-8 h-8 m-5 fill-white" />
-        </a>
-      </div>
-    </div>
-  );
+type FeProjectProps = {
+  vercel: string;
+  github: string;
 };
+
+const FeProjectHtml = ({ vercel, github }: FeProjectProps) => (
+  <div className="flex flex-col flex-1 mx-20 mt-40 mb-20">
+    <iframe src={vercel} className="flex-1 rounded-t-xl"></iframe>
+    <div className="flex justify-end bg-black rounded-b-xl">
+      <IconComponent
+        href={github}
+        reactIcon={FaGithub}
+        className="fill-white m-5"
+      />
+      <IconComponent
+        href={vercel}
+        reactIcon={BsArrowsFullscreen}
+        className="fill-white m-5"
+      />
+    </div>
+  </div>
+);
 
 export const FeProjects = () => (
   <>
-    {feProjectHtml(
-      "https://webshop-godisrattan.vercel.app/",
-      "https://github.com/jesperringhog/webshop-godisrattan",
-    )}
-    {feProjectHtml(
-      "https://jesperringhog.github.io/the-todos/",
-      "https://github.com/jesperringhog/the-todos.git",
-    )}
+    <FeProjectHtml
+      vercel="https://webshop-godisrattan.vercel.app/"
+      github="https://github.com/jesperringhog/webshop-godisrattan"
+    />
+    <FeProjectHtml
+      vercel="https://jesperringhog.github.io/the-todos/"
+      github="https://github.com/jesperringhog/the-todos.git"
+    />
   </>
 );
