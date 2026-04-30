@@ -1,7 +1,7 @@
 export const Hero = () => (
-  <section className="min-h-screen mx-[5%] bg-gray-200">
-    <div className="flex flex-col items-center mt-30">
-      <h1 className="text-4xl font-bold">Portfolio</h1>
+  <section className="flex-1 min-h-screen mx-[5%] mt-20 bg-gray-200">
+    <div className="flex flex-col items-center">
+      <h1 className="mt-10 text-4xl font-bold">Portfolio</h1>
       <div className="flex m-20">
         <div className="h-80 bg-white rounded-l-xl">
           <p className="m-20">

@@ -3,7 +3,7 @@
 import { ComponentType, JSX, SVGProps, useState } from "react";
 import { logotypes } from "./logos";
 import { GdProject } from "@/app/models/GdProject";
-import { characters, nothings } from "@/app/data/gdProjectLists";
+import { characters, nothings } from "@/app/data/gdProjects";
 import SvgHeading01 from "./headings/Heading01";
 import SvgHeading02 from "./headings/Heading02";
 import SvgHeading03 from "./headings/Heading03";

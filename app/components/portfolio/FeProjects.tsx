@@ -3,39 +3,24 @@
 import { FaGithub } from "react-icons/fa";
 import { IconComponent } from "../main/Icon";
 import { BsArrowsFullscreen } from "react-icons/bs";
+import { feProjects } from "@/app/data/feProjects";
 
-type FeProjectProps = {
-  vercel: string;
-  github: string;
-};
-
-const FeProjectHtml = ({ vercel, github }: FeProjectProps) => (
-  <div className="flex flex-col flex-1 mx-20 mt-40 mb-20">
-    <iframe src={vercel} className="flex-1 rounded-t-xl"></iframe>
-    <div className="flex justify-end bg-black rounded-b-xl">
-      <IconComponent
-        href={github}
-        reactIcon={FaGithub}
-        className="fill-white m-5"
-      />
-      <IconComponent
-        href={vercel}
-        reactIcon={BsArrowsFullscreen}
-        className="fill-white m-5"
-      />
+export const FeProjects = () =>
+  feProjects.map((p, i) => (
+    <div key={i} className="flex flex-col flex-1 mt-40 mb-20 hover:scale-101 transition-transform">
+      <div className="flex justify-center bg-white p-3 rounded-t-xl">
+        <p className="text-black">{p.title}</p>
+      </div>
+      <iframe src={p.vercel} className="flex-1"></iframe>
+      <div className="flex justify-end items-center bg-white rounded-b-xl">
+        <IconComponent
+          href={p.github}
+          reactIcon={FaGithub}
+        />
+        <IconComponent
+          href={p.vercel}
+          reactIcon={BsArrowsFullscreen}
+        />
+      </div>
     </div>
-  </div>
-);
-
-export const FeProjects = () => (
-  <>
-    <FeProjectHtml
-      vercel="https://webshop-godisrattan.vercel.app/"
-      github="https://github.com/jesperringhog/webshop-godisrattan"
-    />
-    <FeProjectHtml
-      vercel="https://jesperringhog.github.io/the-todos/"
-      github="https://github.com/jesperringhog/the-todos.git"
-    />
-  </>
-);
+  ));

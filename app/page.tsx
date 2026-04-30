@@ -7,18 +7,18 @@ import { useState } from "react";
 import Portfolio from "./components/portfolio/Portfolio";
 
 const Home = () => {
-  const [activePortfolio, setActivePortfolio] = useState<
-    "frontend" | "graphicdesign"
-  >("frontend");
+  const [activePortfolio, setActivePortfolio] = useState<string>("frontend");
 
-  return (
-    <main className="flex flex-col min-h-screen bg-gray-100">
-      <Header setActivePortfolio={setActivePortfolio}/>
+  const switchPortfolio = (portfolio: string) => setActivePortfolio(portfolio);
+
+  return <div className="flex flex-col flex-1 bg-zinc-500 font-sans dark:bg-black">
+    <main className="flex-1 w-full bg-zinc-300 dark:bg-black sm:items-start">
+      <Header switchPortfolio={switchPortfolio} />
       <Hero />
-      <Portfolio activePortfolio={activePortfolio}/>
+      <Portfolio activePortfolio={activePortfolio} />
       <Footer />
     </main>
-  );
+  </div>;
 };
 
 export default Home;
