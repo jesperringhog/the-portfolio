@@ -1,3 +1,1 @@
-export type Portfolio = {
-    value: "frontend" | "graphicdesign";
-}
+export type Portfolio = "frontend" | "graphicdesign";
