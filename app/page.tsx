@@ -12,7 +12,7 @@ const Home = () => {
   const switchPortfolio = (portfolio: string) => setActivePortfolio(portfolio);
 
   return <div className="flex flex-col flex-1 bg-zinc-500 font-sans dark:bg-black">
-    <main className="flex-1 w-full bg-zinc-300 dark:bg-black sm:items-start">
+    <main className="flex-1 w-full bg-zinc-100 dark:bg-black sm:items-start">
       <Header switchPortfolio={switchPortfolio} />
       <Hero />
       <Portfolio activePortfolio={activePortfolio} />

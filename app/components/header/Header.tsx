@@ -1,5 +1,6 @@
 "use client";
 import { JrLogo } from "./JrLogo";
+import { NavBtn } from "./NavBtn";
 
 type HeaderProps = {
   switchPortfolio: (portfolio: string) => void;
@@ -7,16 +8,26 @@ type HeaderProps = {
 
 export const Header = ({ switchPortfolio }: HeaderProps) => (
   <header className="header-shape w-full h-20 p-5 bg-white fixed z-100">
-    <nav className="flex gap-20 items-center w-full">
+    <nav className="flex gap-20 justify-center items-center w-full max-h-10">
       <div className="flex-1"></div>
-        <button id="feBtn" className="flex-1 justify-end" onClick={() => switchPortfolio("frontend")}>
-          <a href="#portfolio">Frontend</a>
-        </button>
-        <JrLogo />
-        <button id="gdBtn" className="flex-1" onClick={() => switchPortfolio("graphicdesign")}>
-          <a href="#portfolio">Graphic Design</a>
-        </button>
-        <a href="#contact" className="flex-1">Contact</a>
+      <NavBtn
+        id="feBtn"
+        aClass="rounded-bl-[20]"
+        children="Frontend"
+        portfolio="frontend"
+        switchPortfolio={switchPortfolio}
+      />
+      <JrLogo />
+      <NavBtn
+        id="gdBtn"
+        aClass="rounded-tr-[20]"
+        children="Graphic Design"
+        portfolio="graphicdesign"
+        switchPortfolio={switchPortfolio}
+      />
+      <a href="#contact" className="flex-1">
+        Contact
+      </a>
     </nav>
   </header>
 );

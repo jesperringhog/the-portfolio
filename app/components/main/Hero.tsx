@@ -1,5 +1,5 @@
 export const Hero = () => (
-  <section className="flex-1 min-h-screen mx-[5%] mt-20 bg-gray-200">
+  <section className="flex-1 min-h-screen mx-[5%] mt-20 bg-zinc-200">
     <div className="flex flex-col items-center">
       <h1 className="mt-10 text-4xl font-bold">Portfolio</h1>
       <div className="flex m-20">
