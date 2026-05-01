@@ -1,3 +1,5 @@
+"use client";
+
 import { BsArrowsFullscreen } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { IconComponent } from "../components/footer/Icon";
