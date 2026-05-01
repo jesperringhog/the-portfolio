@@ -27,7 +27,7 @@ export const Header = ({ portfolio, switchPortfolio }: HeaderProps) => (
         switchPortfolio={switchPortfolio}
         activePortfolio={portfolio}
       />
-      <a href="#contact" className="flex-1">
+      <a href="#contact" className="flex-1 hover:underline focus:font-medium">
         Contact
       </a>
     </nav>

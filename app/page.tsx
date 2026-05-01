@@ -5,7 +5,7 @@ import { Footer } from "./components/main/Footer";
 import { Hero } from "./components/main/Hero";
 import { useRef, useState } from "react";
 import { Portfolio } from "./models/Portfolio";
-import Portfolios from "./components/portfolio/Portfolio";
+import Portfolios from "./components/portfolio/Portfolios";
 
 const Home = () => {
   const [portfolio, setPortfolio] = useState<Portfolio>("frontend");

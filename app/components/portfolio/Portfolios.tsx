@@ -7,7 +7,7 @@ type PortfolioProps = {
 };
 
 const Portfolios = ({ portfolio }: PortfolioProps) => (
-  <section id="portfolio" className="min-h-screen mx-[5%] flex gap-20 px-20 bg-gray-200">
+  <section id="portfolio" className="min-h-screen mx-[5%] flex gap-20 px-20 bg-zinc-200">
     {portfolio === "frontend" && <FeProjects />}
     {portfolio === "graphicdesign" && <GdProjects />}
   </section>
