@@ -1,35 +1,24 @@
 "use client";
-import { Portfolio } from "@/app/models/Portfolio";
 import { JrLogo } from "./JrLogo";
 import { NavBtn } from "./NavBtn";
 
-type HeaderProps = {
-  portfolio: Portfolio;
-  switchPortfolio: (portfolio: Portfolio) => void;
-};
-
-export const Header = ({ portfolio, switchPortfolio }: HeaderProps) => (
-  <header className="header-shape w-full h-20 p-5 bg-white fixed z-100">
+export const Header = () => (
+  <header className="header-shape h-20 p-5 bg-white">
     <nav className="flex gap-20 justify-center items-center w-full max-h-10">
       <div className="flex-1"></div>
       <NavBtn
-        id="feBtn"
+        href="/frontend"
         children="Frontend"
-        portfolio="frontend"
-        switchPortfolio={switchPortfolio}
-        activePortfolio={portfolio}
       />
       <JrLogo />
       <NavBtn
-        id="gdBtn"
+      href="/graphicdesign"
         children="Graphic Design"
-        portfolio="graphicdesign"
-        switchPortfolio={switchPortfolio}
-        activePortfolio={portfolio}
       />
-      <a href="#contact" className="flex-1 hover:underline focus:font-medium">
-        Contact
-      </a>
+      <NavBtn
+      href="/contact"
+      children="Contact"
+      />
     </nav>
   </header>
 );

@@ -1,36 +1,27 @@
-import { Portfolio } from "@/app/models/Portfolio";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ReactNode, useState } from "react";
 
 type NavBtnProps = {
-  id: string;
-  aClass?: string;
+  href: string;
+  extClass?: string;
   children: ReactNode;
-  portfolio: Portfolio;
-  switchPortfolio: (portfolio: Portfolio) => void;
-  activePortfolio: Portfolio;
 };
 
-export const NavBtn = ({
-  id,
-  aClass,
-  children,
-  portfolio,
-  switchPortfolio,
-  activePortfolio,
-}: NavBtnProps) => {
-  const isActive = activePortfolio === portfolio;
+export const NavBtn = ({ href, extClass, children }: NavBtnProps) => {
+  const pathname = usePathname();
+
+  const isActive = pathname === href;
 
   return (
-    <a
-      href="#portfolio"
-      className={`flex flex-1 justify-center items-center h-10 hover:bg-black hover:text-white hover:font-medium focus:rounded-full
-      ${
+    <Link
+      href={href}
+      className={`flex flex-1 justify-center items-center h-10
+      duration-150 ease-in-out hover:bg-black hover:text-white hover:font-medium focus:rounded-full ${extClass} ${
         isActive ? "bg-black text-white font-medium rounded-full" : ""
-      } ${aClass}`}
-      id={id}
-      onClick={() => switchPortfolio(portfolio)}
+      }`}
     >
       {children}
-    </a>
+    </Link>
   );
 };
