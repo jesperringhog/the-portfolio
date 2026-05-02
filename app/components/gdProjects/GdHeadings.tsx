@@ -1,11 +1,14 @@
-import { useState } from "react";
+"use client";
+
 import { gdHeadings } from "./headings";
+import Link from "next/link";
 
 export const GdHeadings = () => {
   return (
     <div className="flex gap-20">
       {gdHeadings.map((h, i) => (
-        <div key={i} className="group relative size-40">
+        <Link key={i} href={h.href}>
+        <div className="group relative size-70">
           <h.main
             className="w-full h-full absolute inset-0
       transition-opacity duration-150 ease-in-out
@@ -17,6 +20,7 @@ export const GdHeadings = () => {
       opacity-0 group-hover:opacity-100"
           />
         </div>
+        </Link>
       ))}
     </div>
   );

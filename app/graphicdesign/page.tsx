@@ -1,17 +1,14 @@
 "use client";
 
-import { useState } from "react";
-import { characters, nothings } from "../data/gdProjects";
 import { GdHeadings } from "../components/gdProjects/GdHeadings";
-import { Logotypes, GdProjectsHtml } from "../components/gdProjects/GdProjects";
 
-export default function GraphicDesign() {
+export default function GraphicDesign({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <section className="h-full flex flex-col items-center gap-10">
+    <section className="h-full flex justify-center items-center">
       <GdHeadings />
-      <Logotypes />
-      <GdProjectsHtml projects={characters} />
-      <GdProjectsHtml projects={nothings} />
+      {children}
     </section>
   );
 }

@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import { ReactNode, useState } from "react";
 
 type NavBtnProps = {
+  key?: number;
   href: string;
   extClass?: string;
   children: ReactNode;
@@ -11,7 +12,7 @@ type NavBtnProps = {
 export const NavBtn = ({ href, extClass, children }: NavBtnProps) => {
   const pathname = usePathname();
 
-  const isActive = pathname === href;
+  const isActive = pathname.startsWith(href);
 
   return (
     <Link

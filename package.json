@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "char": "svgr assets/character --out-dir characters",
     "logo": "svgr assets/logotype --out-dir logos",
-    "heading": "svgr assets/headings --out-dir headings"
+    "head": "svgr assets/headings --out-dir headings"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
