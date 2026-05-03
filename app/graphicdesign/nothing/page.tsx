@@ -1,6 +1,11 @@
-import { GdPngsHtml } from "@/app/components/gdProjects/GdProjects";
+import { GdPngs } from "@/app/components/gdProjects/GdPngs";
 import { nothing } from "@/app/data/nothing";
+import { GdProjectPng } from "@/app/models/GdProject";
 
-export default function Nothing() {
-    return GdPngsHtml();
+type NothingProps = {
+  pngs: GdProjectPng[];
+}
+
+export default function Nothing({pngs}: NothingProps) {
+    return <GdPngs pngs={nothing} />
 }

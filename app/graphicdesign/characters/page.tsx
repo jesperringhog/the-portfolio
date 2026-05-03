@@ -1,6 +1,11 @@
 import { characters } from "@/app/components/gdProjects/characters";
-import { GdSvgsHtml } from "@/app/components/gdProjects/GdProjects";
+import { GdSvgs } from "@/app/components/gdProjects/GdSvgs";
+import { GdProjectSvg } from "@/app/models/GdProject";
 
-export default function Characters() {
-  return GdSvgsHtml(characters);
+type CharactersProps = {
+  svgs: GdProjectSvg[];
+}
+
+export default function Characters({svgs}: CharactersProps) {
+  return <GdSvgs svgs={characters} containerClass="py-20" logoClass="size-40"/>
 }
