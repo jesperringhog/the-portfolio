@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IconComponent } from "./Icon";
 
 export const Footer = () => (
-    <footer id="contact" className="flex justify-center items-center footer-shape h-20 bg-white">
+    <footer id="contact" className="flex justify-center items-center h-20 bg-white xl:[clip-path:polygon(0%_100%,100%_100%,95%_0%,5%_0%)]">
       <div className="flex gap-20">
         <IconComponent href="https://github.com/jesperringhog" reactIcon={FaGithub} />
         <IconComponent href="https://www.linkedin.com/in/jesper-ringh%C3%B6g-649104125/" reactIcon={FaLinkedin} />

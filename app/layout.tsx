@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Water_Brush } from "next/font/google";
+// import { Geist, Geist_Mono, Water_Brush } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
+import { DropDownMenu } from "./components/header/DropDownMenu";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -10,15 +11,9 @@ import { Footer } from "./components/footer/Footer";
 // });
 
 // const geistMono = Geist_Mono({
-  //   variable: "--font-geist-mono",
-  //   subsets: ["latin"],
-  // });
-
-  // const waterBrush = Water_Brush({
-  //   style: "normal",
-  //   weight: "400",
-  //   subsets: ["latin"]
-  // });
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,15 +25,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html
-      lang="en"
-      className={`h-full antialiased`}
-    >
+    <html lang="en" className={`h-full antialiased`}>
       <body className="h-full flex flex-col">
         <Header />
         <div className="flex flex-col flex-1 font-sans dark:bg-black">
-          <main className="flex-1 mx-[5%] bg-[#e2e2e2] dark:bg-black sm:items-start">
+          <main className="flex-1 xl:mx-[5%] bg-[#e2e2e2] dark:bg-black sm:items-start">
             {children}
           </main>
         </div>
@@ -46,4 +39,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-};
+}

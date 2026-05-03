@@ -22,7 +22,7 @@ export const NavBtn = ({
   return (
     <Link
       href={href}
-      className={`flex flex-1 justify-center items-center h-10
+      className={`hidden xl:flex flex-1 justify-center items-center h-10
       duration-300 ease-in-out ${
         isActive
           ? `bg-black text-white font-medium ${activeClass}`
