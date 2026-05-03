@@ -8,7 +8,7 @@ export const Header = () => (
       <div className="flex-1"></div>
       <NavBtn href="/frontend" children="Frontend" activeClass="rounded-full cursor-default" defaultClass="focus:rounded-l-full"/>
       <JrLogo />
-      <NavBtn href="/graphicdesign" children="Graphic Design" activeClass="rounded-full" defaultClass="focus:rounded-r-full"/>
+      <NavBtn href="/graphicdesign" children="Graphic Design" activeClass="rounded-full hover:rounded-none" defaultClass="focus:rounded-r-full"/>
       <NavBtn href="/contact" children="Contact" defaultClass="focus:rounded-l-full" />
     </nav>
   </header>
