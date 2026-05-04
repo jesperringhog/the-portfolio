@@ -36,6 +36,7 @@ export const Header = () => {
             defaultClass="focus:rounded-l-full"
           />
           <DropDownBtn open={open} openMenu={openMenu} />
+          {/* <div className="flex-1"></div> */}
         </nav>
       </header>
       <DropDownMenu openMenu={open} />

@@ -7,5 +7,5 @@ type LogotypesProps = {
 }
 
 export default function Logotypes({svgs}: LogotypesProps) {
-    return <GdSvgs svgs={logotypes} containerClass="py-10" logoClass="size-50"/>
+    return <GdSvgs svgs={logotypes} containerClass="xl:"/>
 }

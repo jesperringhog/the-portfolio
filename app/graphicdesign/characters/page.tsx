@@ -7,5 +7,5 @@ type CharactersProps = {
 }
 
 export default function Characters({svgs}: CharactersProps) {
-  return <GdSvgs svgs={characters} containerClass="py-20" logoClass="size-40"/>
+  return <GdSvgs svgs={characters} />
 }

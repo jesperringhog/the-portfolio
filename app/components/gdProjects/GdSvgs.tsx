@@ -3,17 +3,19 @@ import { GdProjectPng, GdProjectSvg } from "@/app/models/GdProject";
 
 type GdSvgsProps = {
   svgs: GdProjectSvg[];
-  containerClass: string;
-  logoClass: string;
+  containerClass?: string;
+  logoClass?: string;
 }
 
 export const GdSvgs = ({svgs, containerClass, logoClass}: GdSvgsProps) => {
   return (
-    <div className={`h-full flex flex-wrap justify-center items-center gap-10 px-20 ${containerClass}`}>
+    <div className={`h-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
+    place-items-center gap-10 
+    p-10 md:px-20 md:py-10 ${containerClass}`}>
       {svgs.map((Logo, i) => (
         <Logo
           key={i}
-          className={`hover:scale-105 transition-transform bg-white hover:bg-black hover:text-white rounded-xl p-6 ${logoClass}`}
+          className={`w-full h-auto rounded-xl p-6 hover:scale-105 bg-white hover:bg-black hover:text-white duration-150 ${logoClass}`}
         />
       ))}
     </div>

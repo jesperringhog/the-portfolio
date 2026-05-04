@@ -7,7 +7,7 @@ import { feProjects } from "../data/feProjects";
 
 export default function Frontend() {
   return (
-    <section className="h-full flex justify-center gap-10 p-10">
+    <section className="h-full flex flex-col md:flex-row justify-center gap-10 p-10">
       {feProjects.map((p, i) => (
           <div key={i} className="flex flex-col flex-1 hover:scale-101 transition-transform">
             <div className="flex justify-center bg-white p-3 rounded-t-xl">

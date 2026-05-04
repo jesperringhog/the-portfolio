@@ -14,7 +14,7 @@ export { default as Heading05 } from "./Heading05";
 export { default as Heading06 } from "./Heading06";
 
 export const gdHeadings: GdHeading[] = [
-    {href: "/graphicdesign/characters", main: SvgHeading03, hover: SvgHeading04},
     {href: "/graphicdesign/logotypes", main: SvgHeading01, hover: SvgHeading02},
+    {href: "/graphicdesign/characters", main: SvgHeading03, hover: SvgHeading04},
     {href: "/graphicdesign/nothing", main: SvgHeading05, hover: SvgHeading06},
 ]

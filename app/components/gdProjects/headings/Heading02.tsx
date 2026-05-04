@@ -5,8 +5,6 @@ const SvgHeading02 = (props: SVGProps<SVGSVGElement>) => (
     {...props}
     id="Layer_1"
     viewBox="0 0 303.18 147.26"
-    width="1em"
-    height="1em"
     fill="currentColor"
   >
     <path d="M34.65,103.95c-4.78,0-8.66,3.88-8.66,8.66v34.65h17.32v-34.65c0-4.78-3.88-8.66-8.66-8.66Z" />

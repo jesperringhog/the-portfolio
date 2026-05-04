@@ -3,25 +3,25 @@
 import { gdHeadings } from "./headings";
 import Link from "next/link";
 
-export const GdHeadings = () => {
-  return (
-    <div className="flex gap-20">
-      {gdHeadings.map((h, i) => (
-        <Link key={i} href={h.href}>
-        <div className="group relative size-70">
-          <h.main
-            className="w-full h-full absolute inset-0
-      transition-opacity duration-150 ease-in-out
-      opacity-100 group-hover:opacity-0"
-          />
+export const GdHeadings = () => (
+  <div
+    className="flex flex-col xl:flex-row justify-center items-center gap-20
+    "
+  >
+    {gdHeadings.map((h, i) => (
+      <Link key={i} href={h.href}>
+        <div className="group relative inline-block
+        w-70 md:w-auto md:h-10"
+        >
+          <h.main className="block w-auto h-full 
+          transition-opacity duration-150 group-hover:opacity-0" />
           <h.hover
-            className="w-full h-full absolute inset-0
-      transition-opacity duration-150 ease-in-out
-      opacity-0 group-hover:opacity-100"
+            className="w-auto h-full 
+            transition-opacity duration-150 ease-in-out
+      opacity-0 group-hover:opacity-100 absolute inset-0"
           />
         </div>
-        </Link>
-      ))}
-    </div>
-  );
-};
+      </Link>
+    ))}
+  </div>
+);

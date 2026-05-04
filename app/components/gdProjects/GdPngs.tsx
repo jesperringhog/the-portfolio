@@ -5,12 +5,14 @@ type GdPngsProps = {
 }
 
 export const GdPngs = ({pngs}: GdPngsProps) => (
-  <div className="h-full flex flex-wrap justify-center items-center gap-10 py-20">
+  <div className="h-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
+    place-items-center gap-10 
+    p-10 md:px-20 md:py-10 xl:p-20 duration-150">
     {pngs.map((p, i) => (
       <img
         key={i}
         src={p.src}
-        className="size-40 hover:scale-105 hover:drop-shadow-xl transition-transform rounded-xl"
+        className="w-full h-auto hover:scale-105 hover:drop-shadow-xl duration-150 rounded-xl"
       />
     ))}
   </div>
