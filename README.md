@@ -30,7 +30,7 @@ Deployment: Vercel
 ## Run Localy
 
 ```bash
-git clone https://github.com/jesperringhog/jesper-ringhog.git
+git clone https://github.com/jesperringhog/the-portfolio.git
 cd jesper-ringhog
 npm install
 npm run dev
@@ -61,4 +61,4 @@ npm run dev
 
 ## Repository
 
-https://github.com/jesperringhog/jesper-ringhog.git
+https://github.com/jesperringhog/the-portfolio.git
