@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Portfolio
 
-## Getting Started
+Welcome to my portfolio created with Next. Here I present mainly my Frontend projects, but also Graphic Design and UX.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Responsive design
+- Interactive dropdown menu
+- Dynamic routing
+- Animation with Tailwind
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- React
+- Tailwind CSS
+- TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployment: Vercel
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- /components       – reusable UI components  
+- /data             – frontend href:s and lists of static images  
+- /frontend         – page-specific routing
+- /graphicdesign    – page-specific routing
+- /models           – TypeScript types for projects and smaller components  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## What I Learned
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- This is my first Next project where I learned how powerful Next and React is
+- The efficiency of using and reusing React compononents, props and hooks
+- Awareness of everything i've learned this far and how valuable it is to have knowledge of vanilla code related to working with Next
+- Understanding of routing and gain insight how modern web development works
+- The possibilities with Tailwind for making good UI faster
 
-## Deploy on Vercel
+## Future Improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Implement further interactive states for presenting different projects
+- Find balance with animations for better flow and UX
+- Add more projects to portfolio (preferably created with Next)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Repository
+
+https://github.com/jesperringhog/jesper-ringhog.git

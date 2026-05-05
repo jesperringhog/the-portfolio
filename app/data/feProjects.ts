@@ -4,7 +4,7 @@ export const feProjects: FeProject[] = [
   {
     title: "The Webshop",
     vercel: "https://webshop-godisrattan.vercel.app/",
-    github: "https://github.com/jesperringhog/webshop-godisrattan",
+    github: "https://github.com/jesperringhog/the-webshop.git",
   },
   {
     title: "The Todos",
