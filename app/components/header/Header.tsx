@@ -26,7 +26,7 @@ export const Header = () => {
           <NavBtn
             href="/graphicdesign"
             children="Graphic Design"
-            activeClass="rounded-[100] hover:rounded-[0%] focus:rounded-l-[100]"
+            activeClass="rounded-[100] hover:rounded-[0%]"
             defaultClass="focus:rounded-r-[100]"
           />
           <NavBtn
