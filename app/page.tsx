@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className="text-4xl font-medium">Portfolio</h1>
       </div>
       <div
-        className="xl:max-h-80 flex flex-col-reverse md:flex-row-reverse 
+        className="xl:max-h-80 flex flex-col-reverse lg:flex-row-reverse 
       justify-center items-center md:gap-10 xl:gap-0 md:mx-20 xl:mx-10"
       >
         <img
@@ -18,17 +18,20 @@ export default function Home() {
           md:rounded-full xl:rounded-l-none xl:rounded-r-xl"
         />
         <div
-          className="h-full bg-white p-15 md:p-20 
+          className="h-full bg-white p-15
         md:rounded-xl xl:rounded-r-none xl:rounded-l-xl"
         >
           <p className="text-sm md:text-base">
-            <strong>Front End Developer</strong> student med utbildning i modern
-            webbutveckling och grafisk design, samt erfarenhet av UX-design. Jag
-            kombinerar tekniskt intresse med ett kreativt öga för visuell
-            design, användarupplevelse och noggrannhet. Jag trivs i
-            skärningspunkten mellan kod och design - där funktionalitet möter
-            estetik. Mitt mål är att bidra till hållbar utveckling, med
-            människor och struktur i fokus.
+            <strong>Frontend Developer</strong>-student med utbildning inom
+            modern webbutveckling, grafisk design och UX. Jag trivs i
+            skärningspunkten mellan kod och design — där funktionalitet möter
+            estetik. Jag kombinerar ett tekniskt intresse med ett öga för
+            detaljer och användarupplevelse, med fokus på att skapa tydliga,
+            strukturerade och intuitiva lösningar. Mitt arbetssätt bygger på
+            både användbarhet och visuell kvalitet. Jag söker just nu en LIA
+            (praktikplats) för perioden vecka 39 - vecka 11, där jag vill
+            fortsätta utvecklas, bidra i skarpa projekt och arbeta tillsammans
+            med ett team.
           </p>
         </div>
       </div>
