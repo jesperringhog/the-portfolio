@@ -10,20 +10,20 @@ type DropDownBtnProps = {
 };
 
 export const DropDownBtn = ({ open, openMenu }: DropDownBtnProps) => (
+  <div className="h-full flex flex-1 items-center xl:hidden">
     <button
-      className="h-full flex-1 cursor-pointer xl:hidden"
+      className={`w-10 ${open ? "h-full" : "h-5"} cursor-pointer xl:hidden transition-all duration-300 ease-in-out`}
       onClick={() => {
         openMenu(!open);
       }}
     >
       <div
-        className={`h-full flex flex-col justify-between duration-150 ${
-          open ? "" : ""
-        }`}
+        className="h-full flex flex-col justify-between duration-150"
       >
         <div className="h-1 bg-black rounded-full"></div>
         <div className="h-1 bg-black rounded-full"></div>
         <div className="h-1 bg-black rounded-full"></div>
       </div>
     </button>
+  </div>
 );

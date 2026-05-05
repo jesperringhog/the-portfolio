@@ -15,7 +15,10 @@ export const GdSvgs = ({svgs, containerClass, logoClass}: GdSvgsProps) => {
       {svgs.map((Logo, i) => (
         <Logo
           key={i}
-          className={`w-full h-auto rounded-xl p-6 hover:scale-105 bg-white hover:bg-black hover:text-white duration-150 ${logoClass}`}
+          className={`w-full h-auto rounded-xl p-6 hover:scale-105 
+            bg-white hover:bg-black hover:text-white hover:drop-shadow-xl 
+            transition-all duration-300
+            ${logoClass}`}
         />
       ))}
     </div>

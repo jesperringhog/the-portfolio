@@ -13,33 +13,31 @@ export const Header = () => {
 
   return (
     <>
-      <header className="h-20 p-5 bg-white xl:[clip-path:polygon(0%_0%,100%_0%,95%_100%,5%_100%)]">
+      <header className="w-full h-20 p-5 bg-white xl:[clip-path:polygon(0%_0%,100%_0%,95%_100%,5%_100%)] fixed">
         <nav className="w-full h-full flex gap-20 justify-center items-center max-h-10">
-          <div className="flex-1">
-          </div>
+          <div className="flex-1"></div>
           <NavBtn
             href="/frontend"
             children="Frontend"
-            activeClass="rounded-full cursor-default"
-            defaultClass="focus:rounded-l-full"
+            activeClass="rounded-[100] cursor-default"
+            defaultClass="focus:rounded-l-[100]"
           />
           <JrLogo />
           <NavBtn
             href="/graphicdesign"
             children="Graphic Design"
-            activeClass="rounded-full hover:rounded-none"
-            defaultClass="focus:rounded-r-full"
+            activeClass="rounded-[100] hover:rounded-[0%] focus:rounded-l-[100]"
+            defaultClass="focus:rounded-r-[100]"
           />
           <NavBtn
             href="/contact"
             children="Contact"
-            defaultClass="focus:rounded-l-full"
+            defaultClass="focus:rounded-l-[100]"
           />
           <DropDownBtn open={open} openMenu={openMenu} />
-          {/* <div className="flex-1"></div> */}
         </nav>
       </header>
-      <DropDownMenu openMenu={open} />
+      <DropDownMenu open={open} openMenu={openMenu} />
     </>
   );
 };

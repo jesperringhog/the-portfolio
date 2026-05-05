@@ -8,7 +8,7 @@ type RCompomentProps = {
 const RCompoment = ({ isHome }: RCompomentProps) => (
   <div
     className={`w-10 h-4.5 bg-black ${
-      isHome ? "rounded-tr-full" : "rounded-none hover:rounded-tr-full duration-300 ease-in-out"
+      isHome ? "rounded-tr-full" : "rounded-[0%] hover:rounded-tr-[100] transition-all duration-300 ease-in-out"
     }`}
   ></div>
 );
@@ -27,7 +27,7 @@ export const JrLogo = () => {
       >
         <div
           className={`w-10 h-10 bg-black ${
-            isHome ? "rounded-br-[50%]" : "rounded-none hover:rounded-br-[50%] duration-300 ease-in-out"
+            isHome ? "rounded-br-[50%]" : "rounded-[0%] hover:rounded-br-[50%] transition-all duration-300 ease-in-out"
           }`}
         ></div>
         <div className="flex flex-col gap-1">

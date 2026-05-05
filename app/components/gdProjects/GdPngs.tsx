@@ -12,7 +12,7 @@ export const GdPngs = ({pngs}: GdPngsProps) => (
       <img
         key={i}
         src={p.src}
-        className="w-full h-auto hover:scale-105 hover:drop-shadow-xl duration-150 rounded-xl"
+        className="w-full h-auto hover:scale-105 hover:drop-shadow-xl transition-all duration-300 rounded-xl"
       />
     ))}
   </div>

@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" className={`h-full antialiased`}>
       <body className="h-full flex flex-col">
         <Header />
-        <div className="flex flex-col flex-1 font-sans dark:bg-black">
+        <div className="flex flex-col flex-1 font-sans dark:bg-black mt-20">
           <main className="flex-1 xl:mx-[5%] bg-[#e2e2e2] dark:bg-black sm:items-start">
             {children}
           </main>
