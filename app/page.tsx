@@ -18,7 +18,7 @@ export default function Home() {
           md:rounded-full xl:rounded-l-none xl:rounded-r-xl"
         />
         <div
-          className="h-full bg-white p-15
+          className="h-full bg-project p-15
         md:rounded-xl xl:rounded-r-none xl:rounded-l-xl"
         >
           <p className="text-sm md:text-base">

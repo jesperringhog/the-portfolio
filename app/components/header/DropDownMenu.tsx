@@ -15,7 +15,7 @@ export const DropDownMenu = ({ open, openMenu }: DropDownMenuProps) => (
 
       target.closest("li") ? openMenu(!open) : "";
     }}
-      className={`w-full flex flex-col items-center gap-10 bg-white p-10 drop-shadow-xl
+      className={`w-full flex flex-col items-center gap-10 bg-primary p-10 drop-shadow-xl
         absolute top-20 transition-all duration-300 ease-in-out z-100 
           ${
             open

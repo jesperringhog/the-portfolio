@@ -1,19 +1,7 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono, Water_Brush } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/header/Header";
-import { Footer } from "./components/footer/Footer";
-import { DropDownMenu } from "./components/header/DropDownMenu";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import { Footer } from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,8 +18,8 @@ export default function RootLayout({
     <html lang="en" className={`h-full antialiased`}>
       <body className="h-full flex flex-col">
         <Header />
-        <div className="flex flex-col flex-1 font-sans dark:bg-black mt-20">
-          <main className="flex-1 xl:mx-[5%] bg-[#e2e2e2] dark:bg-black sm:items-start">
+        <div className="flex flex-col flex-1 font-sans mt-20">
+          <main className="flex-1 xl:mx-[5%] bg-secondary sm:items-start">
             {children}
           </main>
         </div>

@@ -1,4 +1,3 @@
-import { nothing } from "@/app/data/nothing";
 import { GdProjectPng, GdProjectSvg } from "@/app/models/GdProject";
 
 type GdSvgsProps = {
@@ -16,7 +15,7 @@ export const GdSvgs = ({svgs, containerClass, logoClass}: GdSvgsProps) => {
         <Logo
           key={i}
           className={`w-full h-auto rounded-xl p-6 hover:scale-105 
-            bg-white hover:bg-black hover:text-white hover:drop-shadow-xl 
+            bg-project hover:bg-foreground hover:text-project hover:drop-shadow-xl 
             transition-all duration-300
             ${logoClass}`}
         />

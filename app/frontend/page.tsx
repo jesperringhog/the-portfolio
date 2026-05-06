@@ -2,8 +2,8 @@
 
 import { BsArrowsFullscreen } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import { IconComponent } from "../components/footer/Icon";
 import { feProjects } from "../data/feProjects";
+import { LinkComponent } from "../components/buttons/LinkComponent";
 
 export default function Frontend() {
   return (
@@ -11,16 +11,16 @@ export default function Frontend() {
       {feProjects.map((p, i) => (
           <div key={i} className="flex flex-col flex-1 hover:scale-101 hover:drop-shadow-xl 
           transition-all duration-300">
-            <div className="flex justify-center bg-white p-3 rounded-t-xl">
-              <p className="text-black">{p.title}</p>
+            <div className="flex justify-center bg-project p-3 rounded-t-xl">
+              <p>{p.title}</p>
             </div>
             <iframe src={p.vercel} className="flex-1"></iframe>
-            <div className="flex justify-end items-center bg-white rounded-b-xl">
-              <IconComponent
+            <div className="flex justify-end items-center bg-project rounded-b-xl">
+              <LinkComponent
                 href={p.github}
                 reactIcon={FaGithub}
               />
-              <IconComponent
+              <LinkComponent
                 href={p.vercel}
                 reactIcon={BsArrowsFullscreen}
               />

@@ -20,9 +20,9 @@ export const DropDownBtn = ({ open, openMenu }: DropDownBtnProps) => (
       <div
         className="h-full flex flex-col justify-between duration-150"
       >
-        <div className="h-1 bg-black rounded-full"></div>
-        <div className="h-1 bg-black rounded-full"></div>
-        <div className="h-1 bg-black rounded-full"></div>
+        <div className="h-1 bg-foreground rounded-full"></div>
+        <div className="h-1 bg-foreground rounded-full"></div>
+        <div className="h-1 bg-foreground rounded-full"></div>
       </div>
     </button>
   </div>

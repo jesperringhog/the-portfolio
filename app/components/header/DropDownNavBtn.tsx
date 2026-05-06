@@ -11,7 +11,7 @@ export const DropDownNavBtn = ({ href, children }: DropDownNavBtnProps) => (
     <Link
       href={href}
       className="px-10 py-4 rounded-[0%] focus:rounded-[100] 
-    hover:bg-black hover:text-white hover:font-bold 
+    hover:bg-foreground hover:text-primary hover:font-bold 
     transition-all duration-300 ease-in-out"
     >
       {children}
