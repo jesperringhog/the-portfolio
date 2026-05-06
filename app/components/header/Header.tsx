@@ -25,13 +25,14 @@ export const Header = () => {
           <JrLogo />
           <NavBtn
             href="/graphicdesign"
-            children="Graphic Design"
+            children="Grafisk design"
             activeClass="rounded-[100] hover:rounded-[0%]"
             defaultClass="focus:rounded-r-[100]"
           />
           <NavBtn
-            href="/contact"
-            children="Contact"
+            href="/cv"
+            children="CV"
+            activeClass="rounded-l-[100] cursor-default"
             defaultClass="focus:rounded-l-[100]"
           />
           <DropDownBtn open={open} openMenu={openMenu} />

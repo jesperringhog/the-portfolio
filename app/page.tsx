@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Home() {
   return (
     <section className="h-full flex flex-1 flex-col items-center pb-10 gap-10">
@@ -11,10 +13,13 @@ export default function Home() {
         className="xl:max-h-80 flex flex-col-reverse lg:flex-row-reverse 
       justify-center items-center md:gap-10 xl:gap-0 md:mx-20 xl:mx-10"
       >
-        <img
-          src="profilbild.jpg"
+        <Image
+          src="/profile/profilbild.jpg"
           alt="Jesper Ringhög"
-          className="h-full w-auto md:h-70 xl:h-full 
+          width={500}
+          height={500}
+          loading="eager"
+          className="w-auto h-full md:h-70 xl:h-full 
           md:rounded-full xl:rounded-l-none xl:rounded-r-xl"
         />
         <div

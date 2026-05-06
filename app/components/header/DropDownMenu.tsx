@@ -24,8 +24,8 @@ export const DropDownMenu = ({ open, openMenu }: DropDownMenuProps) => (
           }`}
     >
           <DropDownNavBtn href="/frontend">Frontend</DropDownNavBtn>
-          <DropDownNavBtn href="/graphicdesign">Graphic Design</DropDownNavBtn>
-          <DropDownNavBtn href="/contact">Contact</DropDownNavBtn>
+          <DropDownNavBtn href="/graphicdesign">Grafisk design</DropDownNavBtn>
+          <DropDownNavBtn href="/cv">CV</DropDownNavBtn>
     </ul>
   </div>
 );

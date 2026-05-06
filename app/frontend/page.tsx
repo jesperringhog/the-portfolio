@@ -1,7 +1,7 @@
 "use client";
 
 import { BsArrowsFullscreen } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import { FaFigma, FaGithub } from "react-icons/fa";
 import { feProjects } from "../data/feProjects";
 import { LinkComponent } from "../components/buttons/LinkComponent";
 
@@ -20,6 +20,10 @@ export default function Frontend() {
                 href={p.github}
                 reactIcon={FaGithub}
               />
+              {p.figma ? <LinkComponent
+              href={p.figma}
+              reactIcon={FaFigma}
+              /> : null}
               <LinkComponent
                 href={p.vercel}
                 reactIcon={BsArrowsFullscreen}
