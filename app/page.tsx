@@ -11,16 +11,16 @@ export default function Home() {
       </div>
       <div
         className="xl:max-h-80 flex flex-col-reverse lg:flex-row-reverse 
-      justify-center items-center md:gap-10 xl:gap-0 md:mx-20 xl:mx-10"
+      justify-center items-center gap-10 xl:gap-0 md:mx-20 xl:mx-10"
       >
         <Image
           src="/profile/profilbild.jpg"
           alt="Jesper Ringhög"
-          width={500}
-          height={500}
+          width={200}
+          height={200}
           loading="eager"
-          className="w-auto h-full md:h-70 xl:h-full 
-          md:rounded-full xl:rounded-l-none xl:rounded-r-xl"
+          className="w-auto h-full md:h-70 xl:h-full
+          rounded-xl md:rounded-full xl:rounded-l-none xl:rounded-r-xl"
         />
         <div
           className="h-full bg-project p-15
