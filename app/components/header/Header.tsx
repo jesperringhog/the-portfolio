@@ -20,14 +20,14 @@ export const Header = () => {
             href="/frontend"
             children="Frontend"
             activeClass="rounded-[100] cursor-default"
-            defaultClass="focus:rounded-l-[100]"
+            defaultClass="focus:rounded-[100]"
           />
           <JrLogo />
           <NavBtn
             href="/graphicdesign"
             children="Grafisk design"
             activeClass="rounded-[100] hover:rounded-[0%]"
-            defaultClass="focus:rounded-r-[100]"
+            defaultClass="focus:rounded-[100]"
           />
           <NavBtn
             href="/cv"

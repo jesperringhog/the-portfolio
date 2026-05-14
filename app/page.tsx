@@ -14,7 +14,7 @@ export default function Home() {
       justify-center items-center gap-10 xl:gap-0 md:mx-20 xl:mx-10"
       >
         <Image
-          src="/profile/profilbild.jpg"
+          src="/profile/london-punk-square.jpg"
           alt="Jesper Ringhög"
           width={200}
           height={200}
