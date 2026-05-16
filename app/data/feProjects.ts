@@ -2,6 +2,11 @@ import { FeProject } from "../models/FeProject";
 
 export const feProjects: FeProject[] = [
   {
+    title: "The Auction",
+    vercel: "https://the-auction-beta.vercel.app/",
+    github: "https://github.com/jesperringhog/the-auction.git",
+  },
+  {
     title: "The Webshop",
     vercel: "https://webshop-godisrattan.vercel.app/",
     github: "https://github.com/jesperringhog/the-webshop.git",
