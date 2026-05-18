@@ -9,7 +9,7 @@ type DropDownMenuProps = {
 };
 
 export const DropDownMenu = ({ open, openMenu }: DropDownMenuProps) => (
-  <div className="flex justify-center xl:hidden">
+  <div className="w-full flex justify-center xl:hidden fixed">
     <ul onClick={(e) => {
       const target = e.target as HTMLElement;
 
