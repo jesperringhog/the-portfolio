@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="h-full flex flex-1 flex-col items-center pb-10 gap-10">
+    <section className="h-full flex flex-1 flex-col items-center pb-10 gap-10 text-foreground">
       <div className="flex flex-col items-center pt-10">
         <h2>Jesper Ringhög</h2>
         <h1 className="text-4xl font-sansafe tracking-wider">PORTFOLIO</h1>

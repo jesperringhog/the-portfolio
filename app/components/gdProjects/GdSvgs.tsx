@@ -27,7 +27,7 @@ export const GdSvgs = ({
         {svgs.map((Logo, i) => (
           <Logo
             key={i}
-            className={`w-full h-auto rounded-xl p-6 hover:scale-105 
+            className={`w-full h-auto rounded-xl p-6 text-foreground hover:scale-105 
             hover:bg-foreground hover:text-project hover:drop-shadow-xl 
             transition-all duration-300
             ${logoClass}`}

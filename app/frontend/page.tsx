@@ -7,7 +7,7 @@ import { LinkComponent } from "../components/buttons/LinkComponent";
 
 export default function Frontend() {
   return (
-    <section className="h-full flex flex-col lg:flex-row justify-center gap-10 p-10">
+    <section className="h-full flex flex-col lg:flex-row justify-center gap-10 p-10 text-foreground">
       {feProjects.map((p, i) => (
           <div key={i} className="flex flex-col flex-1 hover:scale-101 hover:drop-shadow-xl 
           transition-all duration-300">

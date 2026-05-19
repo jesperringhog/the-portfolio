@@ -23,7 +23,7 @@ export const NavBtn = ({
     <Link
       href={href}
       className={`hidden xl:flex flex-1 justify-center items-center h-10
-      rounded-[0%] transition-all duration-300 ease-in-out ${
+      text-foreground rounded-[0%] transition-all duration-300 ease-in-out ${
         isActive
           ? `bg-foreground text-primary font-bold ${activeClass}`
           : `hover:bg-foreground hover:text-primary hover:font-bold ${defaultClass}`
