@@ -7,7 +7,7 @@ export default function Home() {
     <section className="h-full flex flex-1 flex-col items-center pb-10 gap-10">
       <div className="flex flex-col items-center pt-10">
         <h2>Jesper Ringhög</h2>
-        <h1 className="text-4xl font-sansafe">PORTFOLIO</h1>
+        <h1 className="text-4xl font-sansafe tracking-wider">PORTFOLIO</h1>
       </div>
       <div
         className="max-w-300 xl:max-h-80 flex flex-col-reverse lg:flex-row-reverse
