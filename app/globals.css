@@ -6,6 +6,10 @@
   --primary: #ffffff;
   --secondary: #e0e0e0;
   --project: #ffffff;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+  --font-safe: "SANSAFE", sans-serif;
+  --font-space: "SANSPACE", sans-serif;
 }
 
 @theme inline {
@@ -14,8 +18,10 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-project: var(--project);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sansafe: var(--font-safe);
+  --font-sanspace: var(--font-space);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,10 +34,16 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'Courier New', Courier, monospace;
-  scroll-behavior: smooth;
-  transition: 0.5s;
+@font-face {
+  font-family: "SANSAFE";
+  src: url("/fonts/SANSAFE-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SANSPACE";
+  src: url("/fonts/SANSPACE-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
