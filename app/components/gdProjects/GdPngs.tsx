@@ -1,6 +1,6 @@
 import { GdProjectPng } from "@/app/models/GdProject";
 import Image from "next/image";
-import { Heading } from "../Heading";
+import { GdSubHeading } from "./GdSubHeading";
 
 type GdPngsProps = {
   pngs: GdProjectPng[];
@@ -8,7 +8,7 @@ type GdPngsProps = {
 
 export const GdPngs = ({ pngs }: GdPngsProps) => (
   <div className="h-full">
-  <Heading subtitle="CAN EXIST OR BE CREATED">NOTHING</Heading>
+  <GdSubHeading subtitle="CAN EXIST OR BE CREATED">NOTHING</GdSubHeading>
     <div
       className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
     gap-10 px-10 py-10 xl:pt-10 xl:pb-0 duration-150"

@@ -1,5 +1,5 @@
 import { GdProjectPng, GdProjectSvg } from "@/app/models/GdProject";
-import { Heading } from "../Heading";
+import { GdSubHeading } from "./GdSubHeading";
 import React from "react";
 
 type GdSvgsProps = {
@@ -18,7 +18,7 @@ export const GdSvgs = ({
   logoClass,
 }: GdSvgsProps) => (
   <div>
-    <Heading subtitle={subtitle}>{children}</Heading>
+    <GdSubHeading subtitle={subtitle}>{children}</GdSubHeading>
     <div className="w-full flex flex-col justify-center items-center">
       <div
         className={`w-full xl:w-[90%] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4

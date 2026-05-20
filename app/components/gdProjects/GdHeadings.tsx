@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const GdHeadings = () => (
   <div
-    className="flex flex-col lg:flex-row justify-center items-center gap-20 text-foreground
+    className="flex flex-col lg:flex-row justify-center items-center gap-20
     "
   >
     {gdHeadings.map((h, i) => (

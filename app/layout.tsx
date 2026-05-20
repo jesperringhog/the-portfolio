@@ -16,7 +16,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`h-full antialiased`}>
-      <body className="h-full flex flex-col bg-background font-mono">
+      <body className="h-full flex flex-col bg-background text-foreground font-mono">
         <Header />
         <div className="flex flex-col flex-1 mt-20">
           <main className="flex-1 xl:mx-[5%] bg-secondary sm:items-start">
