@@ -1,5 +1,3 @@
-"use client";
-
 import { BsArrowsFullscreen } from "react-icons/bs";
 import { FaFigma, FaGithub } from "react-icons/fa";
 import { feProjects } from "../data/feProjects";

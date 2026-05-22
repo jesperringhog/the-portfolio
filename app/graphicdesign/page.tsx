@@ -1,5 +1,3 @@
-"use client";
-
 import { GdHeadings } from "../components/gdProjects/GdHeadings";
 
 export default function GraphicDesign({
