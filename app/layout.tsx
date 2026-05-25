@@ -4,8 +4,20 @@ import { Header } from "./components/header/Header";
 import { Footer } from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Jesper Ringhög Portfolio",
+  title: "Jesper Ringhög",
   description: "Created by Jesper Ringhög",
+  icons: {
+    icon: [
+      {
+        url: "/favicon/favicon-light.svg",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/favicon/favicon-dark.svg",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

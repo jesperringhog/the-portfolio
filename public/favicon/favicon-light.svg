@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326.59 170.25">
+<style>
+path {
+  fill: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  path {
+    fill: white;
+  }
+}
+</style><path d="M13.76,156.49h71.33c39.39,0,71.33-31.93,71.33-71.33V13.83H13.76v142.65Z"/><path d="M241.5,13.83h-71.33v64.41h142.32c-3.48-36.15-33.93-64.41-70.99-64.41Z"/><path d="M241.5,92.08h-71.33v64.41h142.32c-3.48-36.15-33.93-64.41-70.99-64.41Z"/></svg>
