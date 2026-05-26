@@ -5,7 +5,6 @@ import React from "react";
 type GdSvgsProps = {
   svgs: GdProjectSvg[];
   children: React.ReactNode;
-  subtitle: React.ReactNode;
   containerClass?: string;
   logoClass?: string;
 };
@@ -13,12 +12,11 @@ type GdSvgsProps = {
 export const GdSvgs = ({
   svgs,
   children,
-  subtitle,
   containerClass,
   logoClass,
 }: GdSvgsProps) => (
   <div>
-    <GdSubHeading subtitle={subtitle}>{children}</GdSubHeading>
+    <GdSubHeading>{children}</GdSubHeading>
     <div className="w-full flex flex-col justify-center items-center">
       <div
         className={`w-full xl:w-[90%] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4

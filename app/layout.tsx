@@ -4,7 +4,7 @@ import { Header } from "./components/header/Header";
 import { Footer } from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Jesper Ringhög",
+  title: "Jesper Ringhög Portfolio",
   description: "Created by Jesper Ringhög",
   icons: {
     icon: [
@@ -25,9 +25,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
-    <html lang="en" className={`h-full antialiased`}>
+    <html lang="en" className="h-full antialiased">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/tcq6ukd.css" />
+      </head>
       <body className="h-full flex flex-col bg-background text-foreground font-mono">
         <Header />
         <div className="flex flex-col flex-1 mt-20">

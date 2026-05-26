@@ -11,9 +11,8 @@ export default function Logotypes({ svgs }: LogotypesProps) {
     <GdSvgs
       svgs={logotypes}
       containerClass="xl:px-30"
-      subtitle="NOT EQUAL TO LOGO"
     >
-      LOGOTYPE
+      Logotype
     </GdSvgs>
   );
 }

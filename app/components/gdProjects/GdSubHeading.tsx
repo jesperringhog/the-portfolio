@@ -2,17 +2,15 @@ import React from "react";
 
 type HeadingProps = {
   children: React.ReactNode;
-  subtitle: React.ReactNode;
 };
 
-export const GdSubHeading = ({ children, subtitle }: HeadingProps) => (
+export const GdSubHeading = ({ children }: HeadingProps) => (
   <div className="w-full flex justify-center items-center">
     <h2
-      className="w-full xl:w-auto flex flex-col md:flex-row justify-center items-center md:gap-5 pb-3 
-      text-xl md:text-2xl bg-primary xl:[clip-path:polygon(0%_0%,100%_0%,95%_100%,5%_100%)] md:px-20"
+      className="w-full xl:w-auto flex flex-col md:flex-row justify-center items-center md:items-end md:gap-5 pb-3 
+      bg-primary xl:[clip-path:polygon(0%_0%,100%_0%,90%_100%,10%_100%)] md:px-20"
     >
-      <span className="font-sanspace tracking-[-0.05rem] md:tracking-[-0.1rem]">{children}</span>
-      <span className="font-sansafe tracking-wider md:tracking-widest">{subtitle}</span>
+      <span className="font-brush text-2xl">{children}</span>
     </h2>
   </div>
 );

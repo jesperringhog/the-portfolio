@@ -6,8 +6,10 @@
   --primary: #ffffff;
   --secondary: #e0e0e0;
   --project: #ffffff;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
   --font-mono: "Courier New", Courier, monospace;
+  --font-brush: "brush-script-std", sans-serif;
   --font-safe: "SANSAFE", sans-serif;
   --font-space: "SANSPACE", sans-serif;
 }
@@ -18,10 +20,10 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-project: var(--project);
+  --font-mono: var(--font-mono);
+  --font-brush: var(--font-brush);
   --font-sansafe: var(--font-safe);
   --font-sanspace: var(--font-space);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,16 +36,8 @@
   }
 }
 
-@font-face {
-  font-family: "SANSAFE";
-  src: url("/fonts/SANSAFE-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SANSPACE";
-  src: url("/fonts/SANSPACE-Regular.woff2") format("woff2");
-  font-weight: normal;
+.brush {
+  font-family: "brush-script-std", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }

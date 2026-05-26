@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <>
       <header className="w-full h-20 p-5 bg-primary xl:[clip-path:polygon(0%_0%,100%_0%,95%_100%,5%_100%)] fixed z-999">
-        <nav className="w-full h-full flex gap-20 justify-center items-center max-h-10">
+        <nav className="w-full h-full flex gap-10 md:gap-20 justify-center items-center max-h-10">
           <div className="flex-1"></div>
           <NavBtn
             href="/frontend"

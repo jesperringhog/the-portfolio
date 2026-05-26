@@ -8,7 +8,7 @@ export const Footer = () => (
     bg-primary xl:[clip-path:polygon(0%_100%,100%_100%,95%_0%,5%_0%)]"
   >
     <div className="hidden: md:flex flex-1"></div>
-    <div className="flex gap-10 lg:gap-20">
+    <div className="flex gap-5 lg:gap-20">
       <LinkComponent
         href="https://github.com/jesperringhog"
         reactIcon={FaGithub}

@@ -10,10 +10,9 @@ export default function Characters({ svgs }: CharactersProps) {
   return (
     <GdSvgs
       svgs={characters}
-      subtitle="IN TYPE OF MEANING"
       containerClass="xl:grid-cols-5"
     >
-      CHARACTER
+      Character
     </GdSvgs>
   );
 }

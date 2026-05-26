@@ -10,7 +10,7 @@ export default function Frontend() {
           <div key={i} className="flex flex-col flex-1 hover:scale-101 hover:drop-shadow-xl 
           transition-all duration-300">
             <div className="flex justify-center bg-project p-3 rounded-t-xl">
-              <p>{p.title}</p>
+              <p className="font-brush text-xl">{p.title}</p>
             </div>
             <iframe src={p.vercel} className="flex-1"></iframe>
             <div className="flex justify-end items-center bg-project rounded-b-xl">
