@@ -1,4 +1,3 @@
-import * as React from "react";
 import type { SVGProps } from "react";
 const SvgLogotype08 = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 0 545.82 701.95" width="1em" height="1em">

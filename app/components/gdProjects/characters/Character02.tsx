@@ -1,4 +1,3 @@
-import * as React from "react";
 import type { SVGProps } from "react";
 const SvgCharacter02 = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 0 414.43 195.17" width="1em" height="1em" fill="currentColor">

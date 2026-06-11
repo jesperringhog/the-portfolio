@@ -1,4 +1,4 @@
-import { GdProjectPng, GdProjectSvg } from "@/app/models/GdProject";
+import { GdProjectSvg } from "@/app/models/GdProject";
 import { GdSubHeading } from "./GdSubHeading";
 import React from "react";
 

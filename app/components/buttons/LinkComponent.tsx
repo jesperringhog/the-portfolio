@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { IconType } from "react-icons";
 import { IconComponent } from "./IconComponent";
-import { FaExternalLinkAlt } from "react-icons/fa";
 
 type IconProps = {
   href: string;
   reactIcon: IconType;
+  hoverClass?: string;
 }
 
-export const LinkComponent = ({href, reactIcon }: IconProps) => 
+export const LinkComponent = ({href, reactIcon, hoverClass }: IconProps) => 
   <Link href={href} target="_blank" rel="noopener noreferrer">
-    <IconComponent reactIcon={reactIcon}/>
+    <IconComponent reactIcon={reactIcon} hoverClass={hoverClass}/>
   </Link>
