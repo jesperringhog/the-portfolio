@@ -1,16 +1,21 @@
 import Image from "next/image";
+import { IconComponent } from "./components/buttons/IconComponent";
+import { skills } from "./data/skills";
 
 export default function Home() {
   return (
-    <section className="h-full flex flex-1 flex-col items-center md:pb-10 md:gap-10">
-      <div className="w-full xl:w-auto flex flex-col items-center xl:px-40 py-5 bg-primary 
-      xl:[clip-path:polygon(0%_0%,100%_0%,80%_100%,20%_100%)]">
-        <h2 className="text-xs xl:text-sm">Jesper Ringhög</h2>
-        <h1 className="font-brush text-5xl xl:text-6xl">Portfolio</h1>
+    <section className="h-full flex flex-1 flex-col items-center lg:gap-5">
+      <div
+        className="w-full xl:w-auto flex flex-col items-center xl:px-40 py-5 bg-primary 
+      xl:[clip-path:polygon(0%_0%,100%_0%,80%_100%,20%_100%)]"
+      >
+        <h1 className="flex flex-col text-center font-brush text-5xl">
+          Portfolio
+        </h1>
       </div>
       <div
         className="max-w-300 xl:max-h-80 flex flex-col-reverse lg:flex-row-reverse
-      justify-center items-center md:gap-10 xl:gap-0 md:mx-20 xl:mx-10"
+      justify-center items-center md:gap-5 xl:gap-0 lg:mx-20 xl:mx-10"
       >
         <Image
           src="/profile/london-punk-square.jpg"
@@ -23,7 +28,7 @@ export default function Home() {
         />
         <div
           className="h-full bg-project p-15
-        md:rounded-xl xl:rounded-r-none xl:rounded-l-xl"
+        lg:rounded-xl xl:rounded-r-none xl:rounded-l-xl"
         >
           <p className="text-sm md:text-base">
             <strong>Frontend Developer</strong>-student med utbildning inom
@@ -37,6 +42,19 @@ export default function Home() {
             fortsätta utvecklas, bidra i skarpa projekt och arbeta tillsammans
             med ett team.
           </p>
+        </div>
+      </div>
+      <div className="md:my-5 lg:mt-0 md:mx-20 xl:mx-10 md:mb-10 flex flex-col items-center 
+      text-2xl text-center">
+        <h2 className="w-full xl:w-60 p-3 pt-10 md:pt-3 font-brush bg-project md:rounded-t-xl 
+        xl:[clip-path:polygon(20%_0%,80%_0%,100%_100%,0%_100%)]">
+          Skills
+        </h2>
+        <div className="px-10 py-5 flex flex-wrap justify-center text-background bg-foreground 
+        md:rounded-b-xl xl:rounded-xl">
+          {skills.map((s, i) => (
+            <IconComponent key={i} reactIcon={s} />
+          ))}
         </div>
       </div>
     </section>

@@ -20,17 +20,17 @@ export default function Frontend() {
               <LinkComponent
                 href={p.github}
                 reactIcon={FaGithub}
-                hoverClass="group-hover:fill-primary"
+                extClass="group-hover:fill-primary"
               />
               {p.figma && <LinkComponent
               href={p.figma}
               reactIcon={FaFigma}
-              hoverClass="group-hover:fill-primary"
+              extClass="group-hover:fill-primary"
               />}
               <LinkComponent
                 href={p.vercel}
                 reactIcon={BsArrowsFullscreen}
-                hoverClass="group-hover:fill-primary"
+                extClass="group-hover:fill-primary"
               />
             </div>
           </div>

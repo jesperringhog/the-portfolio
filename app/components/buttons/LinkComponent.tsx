@@ -5,10 +5,10 @@ import { IconComponent } from "./IconComponent";
 type IconProps = {
   href: string;
   reactIcon: IconType;
-  hoverClass?: string;
+  extClass?: string;
 }
 
-export const LinkComponent = ({href, reactIcon, hoverClass }: IconProps) => 
+export const LinkComponent = ({href, reactIcon, extClass }: IconProps) => 
   <Link href={href} target="_blank" rel="noopener noreferrer">
-    <IconComponent reactIcon={reactIcon} hoverClass={hoverClass}/>
+    <IconComponent reactIcon={reactIcon} extClass={extClass}/>
   </Link>
