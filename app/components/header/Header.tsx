@@ -17,7 +17,7 @@ export const Header = () => {
         <nav className="w-full h-full flex gap-10 md:gap-20 justify-center items-center max-h-10">
           <div className="flex-1"></div>
           <NavBtn
-            href="/frontend"
+            href="#frontend"
             children="Frontend"
             activeClass="rounded-[100] cursor-default"
             defaultClass="focus:rounded-[100]"
