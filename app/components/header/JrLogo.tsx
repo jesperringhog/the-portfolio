@@ -7,10 +7,10 @@ type RCompomentProps = {
 
 const RCompoment = ({ isHome }: RCompomentProps) => (
   <div
-    className={`w-10 h-4.5 bg-foreground ${
+    className={`w-10 h-4.5 bg-foreground transition-all duration-300 ease-in-out ${
       isHome
-        ? "rounded-tr-full"
-        : "rounded-[0%] hover:rounded-tr-[100] transition-all duration-300 ease-in-out"
+        ? "rounded-tr-[100] group-hover:rounded-tr-[0%]"
+        : "rounded-[0%] group-hover:rounded-tr-[100]"
     }`}
   ></div>
 );
@@ -23,15 +23,13 @@ export const JrLogo = () => {
   return (
     <Link href="/">
       <div
-        className={`flex gap-1 justify-center ${
-          isHome ? "cursor-default" : "cursor-pointer"
-        }`}
+        className="flex gap-1 justify-center group cursor-pointer" 
       >
         <div
-          className={`w-10 h-10 bg-foreground ${
+          className={`w-10 h-10 bg-foreground transition-all duration-300 ease-in-out ${
             isHome
-              ? "rounded-br-[50%]"
-              : "rounded-[0%] hover:rounded-br-[50%] transition-all duration-300 ease-in-out"
+              ? "rounded-br-[50%] group-hover:rounded-br-[0%]"
+              : "rounded-[0%] group-hover:rounded-br-[50%]"
           }`}
         ></div>
         <div className="flex flex-col gap-1">

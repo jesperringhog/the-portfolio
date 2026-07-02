@@ -5,6 +5,7 @@ import { DropDownBtn } from "./DropDownBtn";
 import { JrLogo } from "./JrLogo";
 import { NavBtn } from "./NavBtn";
 import { DropDownMenu } from "./DropDownMenu";
+import { usePathname } from "next/navigation";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -13,16 +14,9 @@ export const Header = () => {
 
   return (
     <>
-      <header className="w-full h-20 p-5 bg-primary xl:[clip-path:polygon(0%_0%,100%_0%,95%_100%,5%_100%)] fixed z-999">
+      <header className="w-full h-20 px-[10%] py-5 bg-primary xl:[clip-path:polygon(0%_0%,100%_0%,95%_100%,5%_100%)] fixed z-999">
         <nav className="w-full h-full flex gap-10 md:gap-20 justify-center items-center max-h-10">
-          <div className="flex-1"></div>
-          <NavBtn
-            href="#frontend"
-            children="Frontend"
-            activeClass="rounded-[100] cursor-default"
-            defaultClass="focus:rounded-[100]"
-          />
-          <JrLogo />
+          <div className="xl:hidden flex-1"></div>
           <NavBtn
             href="/graphicdesign"
             children="Grafisk design"
@@ -30,10 +24,23 @@ export const Header = () => {
             defaultClass="focus:rounded-[100]"
           />
           <NavBtn
+            href="/#frontend"
+            children="Frontend"
+            activeClass="rounded-[100] cursor-default"
+            defaultClass="focus:rounded-[100]"
+          />
+          <JrLogo />
+          <NavBtn
+            href="#contact"
+            children="Kontakt"
+            activeClass="rounded-[100] cursor-default"
+            defaultClass="focus:rounded-[100]"
+          />
+          <NavBtn
             href="/cv"
             children="CV"
-            activeClass="rounded-l-[100] cursor-default"
-            defaultClass="focus:rounded-l-[100]"
+            activeClass="rounded-[100] cursor-default"
+            defaultClass="focus:rounded-[100]"
           />
           <DropDownBtn open={open} openMenu={openMenu} />
         </nav>

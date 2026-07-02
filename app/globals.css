@@ -28,10 +28,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1d1d1d;
+    --background: #222222;
     --foreground: #ffffff;
     --primary: #171717;
-    --secondary: #252525;
+    --secondary: #292929;
     --project: #000000;
   }
 }
@@ -40,8 +40,4 @@
   font-family: "brush-script-std", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-html {
-  scroll-behavior: smooth;
 }

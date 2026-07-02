@@ -30,13 +30,11 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/tcq6ukd.css" />
       </head>
-      <body className="flex flex-col bg-background text-foreground font-mono">
+      <body className="min-h-screen flex flex-col bg-background text-foreground font-mono">
         <Header />
-        <div className="flex flex-col mt-20">
-          <main className="xl:mx-[5%] bg-secondary sm:items-start">
+          <main className="mt-20 xl:mx-[5%] flex flex-1 justify-center bg-secondary">
             {children}
           </main>
-        </div>
         <Footer />
       </body>
     </html>

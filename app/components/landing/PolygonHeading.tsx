@@ -1,7 +1,7 @@
 import React from "react";
 
 type PolygonHeadingProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   extClass: string;
 };
 

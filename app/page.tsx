@@ -1,11 +1,11 @@
-import { Frontend } from "./components/frontend/Frontend";
+import { Frontend } from "./components/Frontend";
 import { Landing } from "./components/landing/Landing";
 
 export default function Home() {
   return (
-    <>
-    <Landing />
-    <Frontend />
-    </>
+    <div className="max-w-400">
+      <Landing />
+      <Frontend />
+    </div>
   );
 }

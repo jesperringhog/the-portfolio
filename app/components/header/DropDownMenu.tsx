@@ -22,8 +22,9 @@ export const DropDownMenu = ({ open, openMenu }: DropDownMenuProps) => (
               : "opacity-0 -translate-y-2 pointer-events-none"
           }`}
     >
-          <DropDownNavBtn href="/frontend">Frontend</DropDownNavBtn>
+          <DropDownNavBtn href="/#frontend">Frontend</DropDownNavBtn>
           <DropDownNavBtn href="/graphicdesign">Grafisk design</DropDownNavBtn>
+          <DropDownNavBtn href="#contact">Kontakt</DropDownNavBtn>
           <DropDownNavBtn href="/cv">CV</DropDownNavBtn>
     </ul>
   </div>
