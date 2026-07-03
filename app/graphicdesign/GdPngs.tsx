@@ -1,17 +1,17 @@
 import { GdProjectPng } from "@/app/models/GdProject";
 import Image from "next/image";
-import { GdSubHeading } from "./GdSubHeading";
+import { PolygonHeading } from "../components/PolygonHeading";
 
 type GdPngsProps = {
   pngs: GdProjectPng[];
 };
 
 export const GdPngs = ({ pngs }: GdPngsProps) => (
-  <div className="h-full">
-    <GdSubHeading>Nothing</GdSubHeading>
+  <section className="lg:mx-10 flex flex-col items-center">
+    <PolygonHeading polygonClass="bg-primary">Nothing</PolygonHeading>
     <div
-      className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
-    gap-10 px-10 py-10 xl:pt-10 xl:pb-0 duration-150"
+      className="p-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
+    gap-10 bg-primary rounded-xl"
     >
       {pngs.map((p, i) => (
         <Image
@@ -24,5 +24,5 @@ export const GdPngs = ({ pngs }: GdPngsProps) => (
         />
       ))}
     </div>
-  </div>
+  </section>
 );

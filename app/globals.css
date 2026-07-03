@@ -28,10 +28,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #222222;
+    --background: #292929;
     --foreground: #ffffff;
     --primary: #171717;
-    --secondary: #292929;
+    --secondary: #343434;
     --project: #000000;
   }
 }

@@ -2,30 +2,30 @@ import { BsArrowsFullscreen } from "react-icons/bs";
 import { FaFigma, FaGithub } from "react-icons/fa";
 import { feProjects } from "../data/feProjects";
 import { LinkComponent } from "./buttons/LinkComponent";
-import { PolygonHeading } from "./landing/PolygonHeading";
+import { PolygonHeading } from "./PolygonHeading";
 
 export const Frontend = () => (
-  <section id="frontend" className="md:mb-10">
+  <section id="frontend">
     <div className="lg:px-10 flex flex-col items-center">
-      <PolygonHeading extClass="bg-project lg:rounded-t-xl">
+      <PolygonHeading polygonClass="bg-primary lg:rounded-t-xl">
         Frontend
       </PolygonHeading>
       <div
         className="w-full px-10 flex flex-col lg:flex-row flex-wrap justify-center 
-      gap-10 p-10 bg-project lg:rounded-b-xl xl:rounded-xl"
+      gap-10 p-10 bg-primary lg:rounded-b-xl xl:rounded-xl"
       >
         {feProjects.map((p, i) => (
           <div
             key={i}
-            className="w-full flex flex-col flex-1 hover:scale-101 hover:drop-shadow-xl
-          border rounded-xl transition-all duration-500 group"
+            className="w-full flex flex-col flex-1 hover:scale-101 drop-shadow-xl
+          rounded-xl transition-all duration-500 group"
           >
             <div
               className="flex justify-center bg-project group-hover:bg-foreground p-3 
             rounded-t-xl transition-colors duration-500"
             >
               <p
-                className="text-foreground text-xl group-hover:text-project 
+                className="text-foreground group-hover:text-project 
               transition-colors duration-500"
               >
                 {p.title}

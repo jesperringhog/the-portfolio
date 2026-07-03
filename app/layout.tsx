@@ -32,7 +32,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground font-mono">
         <Header />
-          <main className="mt-20 xl:mx-[5%] flex flex-1 justify-center bg-secondary">
+          <main className="mt-20 mb-[1] xl:mx-[5%] lg:pb-10 flex flex-1 justify-center bg-secondary">
             {children}
           </main>
         <Footer />

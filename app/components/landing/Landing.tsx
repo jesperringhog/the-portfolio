@@ -1,12 +1,12 @@
 import { skills } from "@/app/data/skills";
 import Image from "next/image";
 import { IconComponent } from "../buttons/IconComponent";
-import { PolygonHeading } from "./PolygonHeading";
+import { PolygonHeading } from "../PolygonHeading";
 
 export const Landing = () => (
   <section id="home" className="md:mb-5 flex flex-col lg:gap-5 items-center">
     <div
-      className="w-full xl:w-auto flex flex-col items-center xl:px-40 py-5 bg-primary 
+      className="w-full xl:w-auto mt-[1] xl:px-40 py-5 flex flex-col items-center bg-primary 
       xl:[clip-path:polygon(0%_0%,100%_0%,80%_100%,20%_100%)]"
     >
       <h1 className="flex flex-col text-center font-brush text-5xl">
@@ -44,7 +44,7 @@ export const Landing = () => (
       </div>
     </div>
     <div className="md:mt-5 lg:mt-0 md:mx-10 flex flex-col items-center">
-      <PolygonHeading extClass="text-project bg-foreground md:rounded-t-xl">
+      <PolygonHeading polygonClass="text-project bg-foreground md:rounded-t-xl">
         Skills
       </PolygonHeading>
       <div
