@@ -6,3 +6,8 @@ export type GdProjectPng = {
 }
 
 export type GdProjectSvg = (props: SVGProps<SVGSVGElement>) => JSX.Element;
+
+export type GdProjectItem = {
+    component: GdProjectSvg;
+    title: string;
+}

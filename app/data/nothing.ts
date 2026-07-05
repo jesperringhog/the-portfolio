@@ -1,6 +1,6 @@
 import { GdProjectPng } from "../models/GdProject";
 
-export const nothing = [
+export const nothing: GdProjectPng[] = [
     { src: "/nothing/nothing-01.png", alt: "Symbol" },
     { src: "/nothing/nothing-02.png", alt: "Characters solid" },
     { src: "/nothing/nothing-03.png", alt: "Characters" },
