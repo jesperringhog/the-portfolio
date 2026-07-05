@@ -1,7 +1,7 @@
 import { skills } from "@/app/data/skills";
 import Image from "next/image";
-import { IconComponent } from "../buttons/IconComponent";
-import { PolygonHeading } from "../PolygonHeading";
+import { IconComponent } from "./buttons/IconComponent";
+import { PolygonHeading } from "./PolygonHeading";
 
 export const Landing = () => (
   <section id="home" className="md:mb-5 flex flex-col lg:gap-5 items-center">

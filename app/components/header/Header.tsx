@@ -20,28 +20,20 @@ export const Header = () => {
           <NavBtn
             href="/graphicdesign"
             children="Grafisk design"
-            activeClass="rounded-[100] hover:rounded-[0%]"
             defaultClass="focus:rounded-[100]"
           />
           <NavBtn
             href="/#frontend"
             children="Frontend"
-            activeClass="rounded-[100] cursor-default"
             defaultClass="focus:rounded-[100]"
           />
           <JrLogo />
           <NavBtn
             href="#contact"
             children="Kontakt"
-            activeClass="rounded-[100] cursor-default"
             defaultClass="focus:rounded-[100]"
           />
-          <NavBtn
-            href="/cv"
-            children="CV"
-            activeClass="rounded-[100] cursor-default"
-            defaultClass="focus:rounded-[100]"
-          />
+          <NavBtn href="/cv" children="CV" defaultClass="focus:rounded-[100]" />
           <DropDownBtn open={open} openMenu={openMenu} />
         </nav>
       </header>

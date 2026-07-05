@@ -17,7 +17,7 @@ export const Frontend = () => (
         {feProjects.map((p, i) => (
           <div
             key={i}
-            className="w-full flex flex-col flex-1 hover:scale-101 drop-shadow-xl
+            className="w-full h-100 flex flex-col flex-1 hover:scale-101 drop-shadow-xl
           rounded-xl transition-all duration-500 group"
           >
             <div
@@ -25,7 +25,7 @@ export const Frontend = () => (
             rounded-t-xl transition-colors duration-500"
             >
               <p
-                className="text-foreground group-hover:text-project 
+                className="text-foreground font-bold group-hover:text-project 
               transition-colors duration-500"
               >
                 {p.title}

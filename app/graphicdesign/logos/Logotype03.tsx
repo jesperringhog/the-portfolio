@@ -1,7 +1,7 @@
 import type { SVGProps } from "react";
 const SvgLogotype03 = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 0 787.82 366.17" width="1em" height="1em">
-    <g id="secondary" fill="currentColor" className="hover:text-[#e5007e] transition-colors duration-300">
+    <g id="secondary" fill="currentColor" className="group-hover:text-[#e5007e] transition-colors duration-300">
       <polygon points="16.64 144.25 16.64 166.44 16.64 188.63 16.64 210.82 38.84 210.82 38.84 188.63 38.84 166.44 38.84 144.25 38.84 122.06 16.64 122.06 16.64 144.25" />
       <rect x={216.37} y={127.6} width={22.19} height={22.19} />
       <polygon points="687.95 210.82 687.95 233.02 687.95 255.21 687.95 277.4 687.95 299.59 710.15 299.59 710.15 277.4 710.15 255.21 710.15 233.02 710.15 210.82 687.95 210.82" />
