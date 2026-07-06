@@ -39,19 +39,19 @@ export const Frontend = () => (
               <LinkComponent
                 href={p.github}
                 reactIcon={FaGithub}
-                extClass="fill-foreground group-hover:fill-project"
+                iconClass="fill-foreground group-hover:fill-project"
               />
               {p.figma && (
                 <LinkComponent
                   href={p.figma}
                   reactIcon={FaFigma}
-                  extClass="fill-foreground group-hover:fill-project"
+                  iconClass="fill-foreground group-hover:fill-project"
                 />
               )}
               <LinkComponent
                 href={p.vercel}
                 reactIcon={BsArrowsFullscreen}
-                extClass="fill-foreground group-hover:fill-project"
+                iconClass="fill-foreground group-hover:fill-project"
               />
             </div>
           </div>

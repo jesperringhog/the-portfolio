@@ -19,7 +19,7 @@ export const GdPngs = ({ pngs }: GdPngsProps) => {
       <PolygonHeading polygonClass="bg-primary">Nothing</PolygonHeading>
       <div
         className="p-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
-    gap-10 bg-primary rounded-xl"
+    gap-10 bg-primary lg:rounded-xl"
       >
         {pngs.map((p, i) => (
           <Image
@@ -38,6 +38,9 @@ export const GdPngs = ({ pngs }: GdPngsProps) => {
           isOpen={Boolean(SelectedImage)}
           title={SelectedImage.alt}
           onClose={() => setSelectedIndex(null)}
+          modalContainerClass="bg-white"
+          modalTitleClass="text-white bg-black"
+          iconClass="text-black"
         >
           <Image
             src={SelectedImage.src}

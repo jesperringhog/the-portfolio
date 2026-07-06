@@ -12,6 +12,10 @@ export default function GraphicDesign() {
         containerClass="xl:px-30 bg-primary"
         polygonClass="bg-primary lg:rounded-t-xl"
         logoClass="hover:text-project hover:bg-foreground"
+        modalContainerClass="bg-foreground"
+        modalLogoClass="text-project"
+        modalTitleClass="text-foreground bg-project"
+        iconClass="text-project"
       >
         Logotype
       </GdSvgs>
@@ -20,6 +24,10 @@ export default function GraphicDesign() {
         containerClass="xl:grid-cols-5 bg-foreground"
         polygonClass="text-project bg-foreground lg:rounded-t-xl"
         logoClass="text-project hover:text-foreground hover:bg-project"
+        modalContainerClass="bg-project"
+        modalLogoClass="text-foreground"
+        modalTitleClass="text-project bg-foreground"
+        iconClass="text-foreground"
       >
         Character
       </GdSvgs>

@@ -1,5 +1,9 @@
-import type { SVGProps } from "react";
-const SvgLogotype08 = (props: SVGProps<SVGSVGElement>) => (
+import { GdProjectSvgProps } from "@/app/models/GdProject";
+
+const SvgLogotype08 = ({
+  showHoverColors: _showHoverColors,
+  ...props
+}: GdProjectSvgProps) => (
   <svg {...props} viewBox="0 0 545.82 701.95" width="1em" height="1em">
     <g id="secondary" fill="currentColor">
       <path d="M19.51,656.12L0,700.81h4.36l5.05-11.87h23.67l4.86,11.87h4.67l-18.81-44.7h-4.29ZM11.05,685.16l10.42-24.49,10.1,24.49H11.05Z" />

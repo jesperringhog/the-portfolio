@@ -5,7 +5,11 @@ export type GdProjectPng = {
     alt: string
 }
 
-export type GdProjectSvg = (props: SVGProps<SVGSVGElement>) => JSX.Element;
+export type GdProjectSvgProps = SVGProps<SVGSVGElement> & {
+    showHoverColors?: boolean;
+}
+
+export type GdProjectSvg = (props: GdProjectSvgProps) => JSX.Element;
 
 export type GdProjectItem = {
     component: GdProjectSvg;

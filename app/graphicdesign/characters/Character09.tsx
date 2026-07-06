@@ -1,5 +1,9 @@
-import type { SVGProps } from "react";
-const SvgCharacter09 = (props: SVGProps<SVGSVGElement>) => (
+import { GdProjectSvgProps } from "@/app/models/GdProject";
+
+const SvgCharacter09 = ({
+  showHoverColors: _showHoverColors,
+  ...props
+}: GdProjectSvgProps) => (
   <svg
     {...props}
     id="Layer_1"

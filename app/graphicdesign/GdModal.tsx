@@ -7,24 +7,37 @@ type GdModalProps = {
   title: string;
   onClose: () => void;
   children: React.ReactNode;
+  modalContainerClass: string;
+  modalTitleClass: string;
+  iconClass: string
 };
 
-export const GdModal = ({ isOpen, title, onClose, children }: GdModalProps) => {
+export const GdModal = ({
+  isOpen,
+  title,
+  onClose,
+  children,
+  modalContainerClass,
+  modalTitleClass,
+  iconClass
+}: GdModalProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="mx-[5%] my-25 flex flex-col bg-project rounded-xl 
-    fixed inset-0 z-100">
+    <div
+      className={`mx-10 xl:mx-[5%] my-45 lg:my-25 flex flex-col
+    rounded-t-xl drop-shadow-xl fixed inset-0 z-100 ${modalContainerClass}`}
+    >
       <button
         onClick={onClose}
         className="absolute top-1 right-1 cursor-pointer"
       >
-        <IconComponent reactIcon={IoMdCloseCircle} />
+        <IconComponent reactIcon={IoMdCloseCircle} iconClass={iconClass} />
       </button>
       <div className="w-full h-full flex justify-center">{children}</div>
-      <div className="w-full bg-foreground rounded-b-xl">
-        <p className="p-5 text-project text-center font-bold">{title}</p>
-      </div>
+      <p className={`p-5 2xl:text-2xl text-center font-bold rounded-b-xl ${modalTitleClass}`}>
+        {title}
+      </p>
     </div>
   );
 };

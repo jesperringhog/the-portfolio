@@ -4,9 +4,6 @@ import React, { useState } from "react";
 import { PolygonHeading } from "../components/PolygonHeading";
 import { logotypes } from "./logos";
 import { characters } from "./characters";
-import { IconComponent } from "../components/buttons/IconComponent";
-import { FaCross } from "react-icons/fa";
-import { IoMdCloseCircle } from "react-icons/io";
 import { GdProjectItem } from "../models/GdProject";
 import { GdModal } from "./GdModal";
 
@@ -16,6 +13,10 @@ type GdSvgsProps = {
   containerClass: string;
   polygonClass: string;
   logoClass: string;
+  modalContainerClass: string;
+  modalLogoClass: string;
+  modalTitleClass: string;
+  iconClass: string;
 };
 
 export const GdSvgs = ({
@@ -24,6 +25,10 @@ export const GdSvgs = ({
   containerClass,
   polygonClass,
   logoClass,
+  modalContainerClass,
+  modalLogoClass,
+  modalTitleClass,
+  iconClass,
 }: GdSvgsProps) => {
   const svgs: GdProjectItem[] =
     variant === "logotypes" ? logotypes : characters;
@@ -57,8 +62,14 @@ export const GdSvgs = ({
           isOpen={Boolean(SelectedLogo)}
           title={SelectedLogo.title}
           onClose={() => setSelectedIndex(null)}
+          modalContainerClass={modalContainerClass}
+          modalTitleClass={modalTitleClass}
+          iconClass={iconClass}
         >
-          <SelectedLogo.component className="w-full h-full p-20"/>
+          <SelectedLogo.component
+            className={`w-full h-full p-20 2xl:p-40 ${modalLogoClass}`}
+            showHoverColors
+          />
         </GdModal>
       )}
     </section>

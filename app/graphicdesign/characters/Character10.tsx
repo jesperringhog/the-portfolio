@@ -1,5 +1,9 @@
-import type { SVGProps } from "react";
-const SvgCharacter10 = (props: SVGProps<SVGSVGElement>) => (
+import { GdProjectSvgProps } from "@/app/models/GdProject";
+
+const SvgCharacter10 = ({
+  showHoverColors: _showHoverColors,
+  ...props
+}: GdProjectSvgProps) => (
   <svg {...props} viewBox="0 0 443.57 255.44" width="1em" height="1em">
     <g id="black">
       <rect x={190.95} width={12.32} height={12.32} />
