@@ -17,15 +17,15 @@ export const Frontend = () => (
         {feProjects.map((p, i) => (
           <div
             key={i}
-            className="w-full h-100 flex flex-col flex-1 hover:scale-101 drop-shadow-xl
+            className="w-full h-100 flex flex-col flex-1 hover:scale-101 hover:drop-shadow-xl
           rounded-xl transition-all duration-500 group"
           >
             <div
-              className="flex justify-center bg-project group-hover:bg-foreground p-3 
+              className="flex justify-center bg-foreground group-hover:bg-project p-3 
             rounded-t-xl transition-colors duration-500"
             >
               <p
-                className="text-foreground font-bold group-hover:text-project 
+                className="text-project font-bold group-hover:text-foreground 
               transition-colors duration-500"
               >
                 {p.title}
@@ -33,25 +33,25 @@ export const Frontend = () => (
             </div>
             <iframe src={p.vercel} className="flex-1"></iframe>
             <div
-              className="flex justify-end items-center bg-project group-hover:bg-foreground 
+              className="flex justify-end items-center bg-foreground group-hover:bg-project 
             rounded-b-xl transition-colors duration-500"
             >
               <LinkComponent
                 href={p.github}
                 reactIcon={FaGithub}
-                iconClass="fill-foreground group-hover:fill-project"
+                iconClass="fill-project group-hover:fill-foreground"
               />
               {p.figma && (
                 <LinkComponent
                   href={p.figma}
                   reactIcon={FaFigma}
-                  iconClass="fill-foreground group-hover:fill-project"
+                  iconClass="fill-project group-hover:fill-foreground"
                 />
               )}
               <LinkComponent
                 href={p.vercel}
                 reactIcon={BsArrowsFullscreen}
-                iconClass="fill-foreground group-hover:fill-project"
+                iconClass="fill-project group-hover:fill-foreground"
               />
             </div>
           </div>
