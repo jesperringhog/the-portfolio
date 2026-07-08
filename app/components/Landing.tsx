@@ -1,4 +1,4 @@
-import { skills } from "@/app/data/skills";
+import { skillIcons } from "@/app/data/skills";
 import Image from "next/image";
 import { IconComponent } from "./buttons/IconComponent";
 import { PolygonHeading } from "./PolygonHeading";
@@ -51,7 +51,7 @@ export const Landing = () => (
         className="px-15 py-5 flex flex-wrap justify-center text-project bg-foreground 
         md:rounded-b-xl xl:rounded-xl"
       >
-        {skills.map((s, i) => (
+        {skillIcons.map((s, i) => (
           <IconComponent key={i} reactIcon={s} />
         ))}
       </div>

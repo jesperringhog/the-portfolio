@@ -6,12 +6,11 @@
   --primary: #ffffff;
   --secondary: #e0e0e0;
   --project: #ffffff;
+  --secondary-text: #686868;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     sans-serif;
   --font-mono: "Courier New", Courier, monospace;
   --font-brush: "brush-script-std", sans-serif;
-  --font-safe: "SANSAFE", sans-serif;
-  --font-space: "SANSPACE", sans-serif;
 }
 
 @theme inline {
@@ -20,10 +19,9 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-project: var(--project);
+  --color-secondary-text: var(--secondary-text);
   --font-mono: var(--font-mono);
   --font-brush: var(--font-brush);
-  --font-sansafe: var(--font-safe);
-  --font-sanspace: var(--font-space);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +31,7 @@
     --primary: #171717;
     --secondary: #343434;
     --project: #000000;
+    --secondary-text: #aaaaaa;
   }
 }
 
