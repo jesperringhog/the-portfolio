@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased scroll-smooth">
+    <html lang="en" data-scroll-behavior="smooth" className="h-full antialiased scroll-smooth">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/tcq6ukd.css" />
       </head>

@@ -9,7 +9,7 @@ export default function GraphicDesign() {
     <div className="max-w-400 lg:mt-5 flex flex-col lg:gap-5">
       <GdSvgs
         variant="logotypes"
-        containerClass="xl:px-30 bg-primary"
+        containerClass="xl:px-30 bg-project"
         polygonClass="bg-primary lg:rounded-t-xl"
         logoClass="hover:text-project hover:bg-foreground"
         modalContainerClass="bg-foreground"

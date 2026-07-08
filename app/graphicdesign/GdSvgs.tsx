@@ -52,8 +52,7 @@ export const GdSvgs = ({
             <Logo
               className={`w-full h-auto p-6 group text-foreground rounded-xl hover:scale-105
             hover:drop-shadow-xl transition-all duration-300
-            ${logoClass}`}
-            />
+            ${logoClass}`} />
           </button>
         ))}
       </div>
@@ -62,12 +61,14 @@ export const GdSvgs = ({
           isOpen={Boolean(SelectedLogo)}
           title={SelectedLogo.title}
           onClose={() => setSelectedIndex(null)}
+          nextImg={() => setSelectedIndex(selectedIndex! +1)}
+          prevImg={() => setSelectedIndex(selectedIndex! -1)}
           modalContainerClass={modalContainerClass}
           modalTitleClass={modalTitleClass}
           iconClass={iconClass}
         >
           <SelectedLogo.component
-            className={`w-full h-full p-20 2xl:p-40 ${modalLogoClass}`}
+            className={`w-full h-full px-5 md:px-30 py-20 2xl:p-40 ${modalLogoClass}`}
             showHoverColors
           />
         </GdModal>

@@ -38,17 +38,19 @@ export const GdPngs = ({ pngs }: GdPngsProps) => {
           isOpen={Boolean(SelectedImage)}
           title={SelectedImage.alt}
           onClose={() => setSelectedIndex(null)}
+          nextImg={() => setSelectedIndex(selectedIndex! + 1)}
+          prevImg={() => setSelectedIndex(selectedIndex! - 1)}
           modalContainerClass="bg-white"
           modalTitleClass="text-white bg-black"
           iconClass="text-black"
         >
-          <Image
-            src={SelectedImage.src}
-            alt={SelectedImage.alt}
-            width={500}
-            height={500}
-            className="w-auto"
-          ></Image>
+            <Image
+              src={SelectedImage.src}
+              alt={SelectedImage.alt}
+              width={500}
+              height={500}
+              className="max-w-full max-h-[80vh] w-auto h-auto object-contain"
+            ></Image>
         </GdModal>
       )}
     </section>
