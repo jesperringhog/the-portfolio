@@ -1,18 +1,22 @@
 import { CvSkills } from "./CvSkills";
 import { CvHeader } from "./CvHeader";
-import { CvSection } from "./CvSection";
 import { CvSummary } from "./CvSummary";
 import { CvEducation } from "./CvEducation";
+import { CvExperience } from "./CvExperience";
 
 export default function Cv() {
   return (
-    <section className="max-w-400 w-full h-full flex flex-col">
+    <section className="w-full h-full flex flex-col">
       <CvHeader />
-      <div className="p-10 flex flex-wrap gap-10">
-        <CvSkills />
+      <div className="lg:p-10 flex flex-col md:flex-row flex-wrap lg:gap-10">
         <div className="flex-1">
           <CvSummary />
           <CvEducation />
+        </div>
+        <CvSkills />
+        <div className="flex flex-col md:flex-row 2xl:flex-1 flex-wrap lg:gap-10">
+          <CvExperience variant="employment" heading="Anställning" />
+          <CvExperience variant="internship" heading="Praktik" />
         </div>
       </div>
     </section>
