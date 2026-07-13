@@ -2,6 +2,7 @@ import { skillIcons, skills } from "@/app/data/skills";
 import Image from "next/image";
 import { IconComponent } from "./buttons/IconComponent";
 import { PolygonHeading } from "./PolygonHeading";
+import { ProfileImg } from "./landing/ProfileImg";
 
 export const Landing = () => (
   <section
@@ -20,15 +21,7 @@ export const Landing = () => (
       className="xl:max-h-80 lg:px-10 flex flex-col-reverse lg:flex-row-reverse
       justify-center items-center md:gap-5 xl:gap-0"
     >
-      <Image
-        src="/profile/london-punk-square-fade.jpg"
-        alt="Jesper Ringhög"
-        width={200}
-        height={200}
-        loading="eager"
-        className="w-full md:w-auto h-full md:h-70 xl:h-full
-          md:rounded-full xl:rounded-l-none xl:rounded-r-xl"
-      />
+      < ProfileImg />
       <div
         className="min-h-80 xl:max-h-80 bg-project p-10 md:p-15
         lg:rounded-xl xl:rounded-r-none xl:rounded-l-xl"
