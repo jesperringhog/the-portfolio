@@ -26,15 +26,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" className="h-full antialiased scroll-smooth">
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className="h-full antialiased scroll-smooth"
+    >
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/tcq6ukd.css" />
       </head>
-      <body className="min-h-screen flex flex-col bg-background text-foreground font-mono">
+      <body className="min-h-screen flex flex-col text-foreground font-mono 
+      bg-fixed bg-linear-to-b from-white dark:from-[#151515] to-[#151515] dark:to-white">
         <Header />
-          <main className="mt-20 mb-[1] xl:mx-[5%] lg:pb-10 flex flex-1 justify-center bg-secondary">
+        <div className="pt-20 pb-[1] xl:mx-[5%] lg:pb-10 flex flex-col flex-1 items-center justify-center 
+        bg-[url(/background/vaddo.jpg)] dark:bg-[url(/background/vaddo-invert.jpg)] bg-cover">
+          <main className="max-w-400 flex-1">
             {children}
           </main>
+        </div>
         <Footer />
       </body>
     </html>

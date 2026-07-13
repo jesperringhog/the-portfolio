@@ -5,10 +5,10 @@ export const Footer = () => (
   <footer
     id="contact"
     className="h-40 md:h-20 pb-10 md:pb-0 flex flex-col md:flex-row justify-center items-center 
-    bg-primary xl:[clip-path:polygon(0%_100%,100%_100%,95%_0%,5%_0%)]"
+    bg-foreground xl:[clip-path:polygon(0%_100%,100%_100%,95%_0%,5%_0%)]"
   >
     <div className="hidden: md:flex flex-1"></div>
-    <div className="flex gap-5 lg:gap-20">
+    <div className="flex gap-5 lg:gap-20 text-project">
       <LinkComponent
         href="https://github.com/jesperringhog"
         reactIcon={FaGithub}
@@ -23,7 +23,7 @@ export const Footer = () => (
       />
     </div>
     <div className="flex md:flex-1 justify-center items-center text-center">
-      <p className="text-xs">© 2026 Jesper Ringhög</p>
+      <p className="text-xs text-project">© 2026 Jesper Ringhög</p>
     </div>
   </footer>
 );

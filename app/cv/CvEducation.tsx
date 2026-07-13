@@ -4,7 +4,7 @@ import { CvSection } from "./CvSection";
 export const CvEducation = () => (
   <CvSection polygonClass="bg-project" articleClass="bg-project" heading="Utbildning">
     {education.map((e, i) => (
-      <div key={i}>
+      <div key={i} className="h-full">
         <h4 className="font-bold">
           <i className="text-secondary-text">{e.school}</i>
           <span className="font-normal"> {e.education}</span>

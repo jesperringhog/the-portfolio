@@ -6,7 +6,7 @@ import { CvExperience } from "./CvExperience";
 
 export default function Cv() {
   return (
-    <section className="w-full h-full flex flex-col">
+    <section className="flex flex-1 flex-col">
       <CvHeader />
       <div className="lg:p-10 flex flex-col md:flex-row flex-wrap lg:gap-10">
         <div className="flex-1">

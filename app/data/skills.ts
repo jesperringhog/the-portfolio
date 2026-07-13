@@ -11,7 +11,7 @@ import {
 import { FiFigma } from "react-icons/fi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs, SiExpress, SiMongodb } from "react-icons/si";
-import { Skill } from "../models/Skill";
+import { SkillCategory } from "../models/Skill";
 
 export const skillIcons = [
   FaHtml5,
@@ -31,41 +31,57 @@ export const skillIcons = [
   DiIllustrator,
 ];
 
-export const skills: Skill[] = [
+export const skills: SkillCategory[] = [
   {
-    heading: "Programmeringsspråk",
-    skills: ["HTML", "CSS", "SCSS", "JavaScript", "TypeScript"],
+    heading: "Frontend",
+    skills: [
+      { name: "HTML", icon: FaHtml5 },
+      { name: "CSS / SCSS", icon: FaCss3Alt },
+      { name: "JavaScript / TypeScript", icon: DiJavascript },
+    ],
   },
   {
-    heading: "API-utveckling",
-    skills: ["Node.js", "Express.js", "MongoDB"],
+    heading: "Backend",
+    skills: [
+      { name: "Node.js", icon: FaNodeJs },
+      { name: "Express.js", icon: SiExpress },
+      { name: "MongoDB", icon: SiMongodb },
+    ],
   },
   {
     heading: "Ramverk",
-    skills: ["Next.js", "React", "Tailwind CSS", "Bootstrap"],
+    skills: [
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "React", icon: FaReact },
+      { name: "Tailwind CSS", icon: RiTailwindCssFill },
+    ],
   },
   {
     heading: "Verktyg",
-    skills: ["Git", "GitHub", "Figma"],
+    skills: [
+      { name: "Git", icon: FaGitAlt },
+      { name: "GitHub", icon: FaGithub },
+      { name: "Figma", icon: FiFigma },
+    ],
   },
   {
     heading: "Övrigt",
     skills: [
-      "Responsiv design",
-      "Agil utveckling",
-      "UX",
-      "Grafisk design",
-      "Photoshop",
-      "Illustrator",
-      "Indesign",
+      { name: "Responsiv design" },
+      { name: "Agil utveckling" },
+      { name: "UX" },
+      { name: "Grafisk design" },
+      { name: "Indesign" },
+      { name: "Photoshop", icon: DiPhotoshop },
+      { name: "Illustrator", icon: DiIllustrator },
     ],
   },
   {
     heading: "Språk",
-    skills: ["Svenska (modersmål)", "Engelska"],
+    skills: [{ name: "Svenska (modersmål)" }, { name: "Engelska" }],
   },
   {
     heading: "Körkort",
-    skills: ["B"],
+    skills: [{ name: "B" }],
   },
 ];

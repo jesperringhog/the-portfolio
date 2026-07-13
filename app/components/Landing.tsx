@@ -1,10 +1,13 @@
-import { skillIcons } from "@/app/data/skills";
+import { skillIcons, skills } from "@/app/data/skills";
 import Image from "next/image";
 import { IconComponent } from "./buttons/IconComponent";
 import { PolygonHeading } from "./PolygonHeading";
 
 export const Landing = () => (
-  <section id="home" className="md:mb-5 flex flex-col lg:gap-5 items-center">
+  <section
+    id="home"
+    className="w-full md:mb-5 flex flex-col lg:gap-5 items-center"
+  >
     <div
       className="w-full xl:w-auto mt-[1] xl:px-40 py-5 flex flex-col items-center bg-primary 
       xl:[clip-path:polygon(0%_0%,100%_0%,80%_100%,20%_100%)]"
@@ -13,7 +16,7 @@ export const Landing = () => (
         Portfolio
       </h1>
     </div>
-    <div
+    <article
       className="xl:max-h-80 lg:px-10 flex flex-col-reverse lg:flex-row-reverse
       justify-center items-center md:gap-5 xl:gap-0"
     >
@@ -27,7 +30,7 @@ export const Landing = () => (
           md:rounded-full xl:rounded-l-none xl:rounded-r-xl"
       />
       <div
-        className="min-h-80 xl:max-h-80 bg-project p-15
+        className="min-h-80 xl:max-h-80 bg-project p-10 md:p-15
         lg:rounded-xl xl:rounded-r-none xl:rounded-l-xl"
       >
         <p className="text-sm md:text-base">
@@ -37,24 +40,31 @@ export const Landing = () => (
           kombinerar ett tekniskt intresse med ett öga för detaljer och
           användarupplevelse, med fokus på att skapa tydliga, strukturerade och
           intuitiva lösningar. Mitt arbetssätt bygger på både användbarhet och
-          visuell kvalitet. Jag söker just nu en LIA (praktikplats) för perioden
-          vecka 39 - vecka 11, där jag vill fortsätta utvecklas, bidra i skarpa
-          projekt och arbeta tillsammans med ett team.
+          visuell kvalitet. Jag söker just nu en <strong>LIA</strong>{" "}
+          (praktikplats) för perioden
+          <strong> v. 39 - 11</strong>, där jag vill fortsätta utvecklas, bidra
+          i skarpa projekt och arbeta tillsammans med ett team.
         </p>
       </div>
-    </div>
-    <div className="md:mt-5 lg:mt-0 md:mx-10 flex flex-col items-center">
+    </article>
+    <article className="md:mt-5 lg:mt-0 md:mx-10 flex flex-col items-center">
       <PolygonHeading polygonClass="text-project bg-foreground md:rounded-t-xl">
         Skills
       </PolygonHeading>
       <div
-        className="px-15 py-5 flex flex-wrap justify-center text-project bg-foreground 
+        className="px-10 md:px-15 py-5 flex flex-wrap justify-center text-project bg-foreground 
         md:rounded-b-xl xl:rounded-xl"
       >
-        {skillIcons.map((s, i) => (
-          <IconComponent key={i} reactIcon={s} />
+        {skills.map((s, i) => (
+          <div key={i} className="flex flex-wrap">
+            {s.skills.map((skill, i) =>
+              skill.icon ? (
+                <IconComponent key={i} reactIcon={skill.icon!} />
+              ) : null,
+            )}
+          </div>
         ))}
       </div>
-    </div>
+    </article>
   </section>
 );

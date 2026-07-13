@@ -16,7 +16,7 @@ export const GdPngs = ({ pngs }: GdPngsProps) => {
 
   return (
     <section className="lg:mx-10 flex flex-col items-center">
-      <PolygonHeading polygonClass="bg-primary">Nothing</PolygonHeading>
+      <PolygonHeading polygonClass="bg-primary">Ingenting</PolygonHeading>
       <div
         className="p-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
     gap-10 bg-primary lg:rounded-xl"
