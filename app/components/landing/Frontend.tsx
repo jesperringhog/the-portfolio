@@ -1,8 +1,8 @@
+import { feProjects } from "@/app/data/feProjects";
 import { BsArrowsFullscreen } from "react-icons/bs";
 import { FaFigma, FaGithub } from "react-icons/fa";
-import { feProjects } from "../data/feProjects";
-import { LinkComponent } from "./buttons/LinkComponent";
-import { PolygonHeading } from "./PolygonHeading";
+import { LinkComponent } from "../buttons/LinkComponent";
+import { PolygonHeading } from "../PolygonHeading";
 
 export const Frontend = () => (
   <section id="frontend">

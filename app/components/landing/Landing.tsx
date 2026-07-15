@@ -1,8 +1,7 @@
-import { skillIcons, skills } from "@/app/data/skills";
-import Image from "next/image";
-import { IconComponent } from "./buttons/IconComponent";
-import { PolygonHeading } from "./PolygonHeading";
-import { ProfileImg } from "./landing/ProfileImg";
+import { skills } from "@/app/data/skills";
+import { IconComponent } from "../buttons/IconComponent";
+import { PolygonHeading } from "../PolygonHeading";
+import { ProfileImg } from "./ProfileImg";
 
 export const Landing = () => (
   <section
@@ -21,22 +20,21 @@ export const Landing = () => (
       className="xl:max-h-80 lg:px-10 flex flex-col-reverse lg:flex-row-reverse
       justify-center items-center md:gap-5 xl:gap-0"
     >
-      < ProfileImg />
+      <ProfileImg />
       <div
         className="min-h-80 xl:max-h-80 bg-project p-10 md:p-15
         lg:rounded-xl xl:rounded-r-none xl:rounded-l-xl"
       >
         <p className="text-sm md:text-base">
-          <strong>Frontend Developer</strong>-student med utbildning inom modern
-          webbutveckling, grafisk design och UX. Jag trivs i skärningspunkten
-          mellan kod och design — där funktionalitet möter estetik. Jag
-          kombinerar ett tekniskt intresse med ett öga för detaljer och
-          användarupplevelse, med fokus på att skapa tydliga, strukturerade och
-          intuitiva lösningar. Mitt arbetssätt bygger på både användbarhet och
-          visuell kvalitet. Jag söker just nu en <strong>LIA</strong>{" "}
-          (praktikplats) för perioden
-          <strong> v. 39 - 11</strong>, där jag vill fortsätta utvecklas, bidra
-          i skarpa projekt och arbeta tillsammans med ett team.
+          <strong>Frontend Developer</strong>-student med bakgrund inom grafisk
+          design och UX. Jag trivs bäst när jag får kombinera teknik med kreativ
+          problemlösning och skapa webbupplevelser som är både funktionella och
+          genomtänkta. För mig handlar bra frontend om mer än att få något att
+          fungera – det handlar om struktur, tillgänglighet, prestanda och
+          detaljer som gör skillnad för användaren. Jag lägger lika stor vikt
+          vid kodens kvalitet som vid användarens upplevelse och strävar efter
+          att bygga lösningar som är hållbara bakom kulisserna, samtidigt som de
+          känns enkla, intuitiva och visuellt genomarbetade.
         </p>
       </div>
     </article>
