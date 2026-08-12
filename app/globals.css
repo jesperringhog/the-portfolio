@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ebebeb;
+  --background: #dcdcdc;
   --foreground: #000000;
   --primary: #ffffff;
   --secondary: #e0e0e0;
   --project: #ffffff;
+  --gradient-primary: #ffffff;
+  --gradient-secondary: #151515;
   --secondary-text: #686868;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     sans-serif;
@@ -19,6 +21,8 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-project: var(--project);
+  --color-gradient-primary: var(--gradient-primary);
+  --color-gradient-secondary: var(--gradient-secondary);
   --color-secondary-text: var(--secondary-text);
   --font-mono: var(--font-mono);
   --font-brush: var(--font-brush);
@@ -26,11 +30,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #292929;
+    --background: #393939;
     --foreground: #ffffff;
     --primary: #171717;
     --secondary: #343434;
     --project: #000000;
+    --gradient-primary: #151515;
+    --gradient-secondary: #ffffff;
     --secondary-text: #aaaaaa;
   }
 }

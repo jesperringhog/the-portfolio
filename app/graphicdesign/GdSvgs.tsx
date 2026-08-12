@@ -37,11 +37,11 @@ export const GdSvgs = ({
   const SelectedLogo = selectedIndex !== null ? svgs[selectedIndex] : null;
 
   return (
-    <section className="lg:mx-10 flex flex-col items-center">
+    <section className="flex flex-col items-center">
       <PolygonHeading children={children} polygonClass={polygonClass} />
       <div
-        className={`w-full p-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10
-          lg:rounded-b-xl xl:rounded-xl ${containerClass}`}
+        className={`w-full p-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10
+          lg:rounded-b-xl xl:rounded-none 2xl:rounded-xl ${containerClass}`}
       >
         {svgs.map(({ component: Logo, title }, i) => (
           <button

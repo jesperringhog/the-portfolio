@@ -6,7 +6,7 @@ import { nothing } from "../data/nothing";
 
 export default function GraphicDesign() {
   return (
-    <div className="lg:mt-5 flex flex-col lg:gap-5">
+    <div className="lg:mt-10 flex flex-col lg:gap-10">
       <GdSvgs
         variant="logotypes"
         containerClass="xl:px-30 bg-project"

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const ProfileImg = () => {
   const imgClass =
-    "w-full md:w-auto h-full md:h-70 xl:h-full md:rounded-full xl:rounded-l-none xl:rounded-r-xl";
+    "w-full md:w-auto h-full md:h-70 xl:h-full md:rounded-full xl:rounded-none 2xl:rounded-r-xl";
 
   return (
     <>

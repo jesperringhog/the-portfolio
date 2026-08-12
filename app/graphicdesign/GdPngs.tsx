@@ -15,11 +15,11 @@ export const GdPngs = ({ pngs }: GdPngsProps) => {
   const SelectedImage = selectedIndex !== null ? pngs[selectedIndex] : null;
 
   return (
-    <section className="lg:mx-10 flex flex-col items-center">
-      <PolygonHeading polygonClass="bg-primary">Ingenting</PolygonHeading>
+    <section className="flex flex-col items-center">
+      <PolygonHeading polygonClass="bg-project">Ingenting</PolygonHeading>
       <div
-        className="p-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
-    gap-10 bg-primary lg:rounded-xl"
+        className="p-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
+    gap-10 bg-primary lg:rounded-xl xl:rounded-none 2xl:rounded-xl"
       >
         {pngs.map((p, i) => (
           <Image

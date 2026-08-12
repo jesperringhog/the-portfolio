@@ -35,10 +35,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/tcq6ukd.css" />
       </head>
       <body className="min-h-screen flex flex-col text-foreground font-mono 
-      bg-fixed bg-linear-to-b from-white dark:from-[#151515] to-[#151515] dark:to-white">
+      bg-fixed bg-linear-to-b from-gradient-primary to-gradient-secondary">
         <Header />
-        <div className="pt-20 pb-[1] xl:mx-[5%] lg:pb-10 flex flex-col flex-1 items-center justify-center 
-        bg-[url(/background/vaddo.jpg)] dark:bg-[url(/background/vaddo-invert.jpg)] bg-cover">
+        <div className="pt-20 pb-[1] xl:mx-[5%] lg:pb-10 xl:pb-0 2xl:pb-10 flex flex-col flex-1 items-center justify-center 
+        bg-background">
           <main className="max-w-400 flex-1">
             {children}
           </main>
