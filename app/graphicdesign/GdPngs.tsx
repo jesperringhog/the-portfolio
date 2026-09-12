@@ -16,10 +16,12 @@ export const GdPngs = ({ pngs }: GdPngsProps) => {
 
   return (
     <section className="flex flex-col items-center">
-      <PolygonHeading polygonClass="bg-project">Ingenting</PolygonHeading>
+      <PolygonHeading polygonClass="bg-project lg:rounded-t-xl">
+        Ingenting
+      </PolygonHeading>
       <div
         className="p-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
-    gap-10 bg-primary lg:rounded-xl xl:rounded-none 2xl:rounded-xl"
+    gap-10 bg-primary lg:rounded-b-xl xl:rounded-xl"
       >
         {pngs.map((p, i) => (
           <Image
@@ -44,13 +46,13 @@ export const GdPngs = ({ pngs }: GdPngsProps) => {
           modalTitleClass="text-white bg-black"
           iconClass="text-black"
         >
-            <Image
-              src={SelectedImage.src}
-              alt={SelectedImage.alt}
-              width={500}
-              height={500}
-              className="max-w-full max-h-[80vh] w-auto h-auto object-contain"
-            ></Image>
+          <Image
+            src={SelectedImage.src}
+            alt={SelectedImage.alt}
+            width={500}
+            height={500}
+            className="max-w-full max-h-[80vh] w-auto h-auto object-contain"
+          ></Image>
         </GdModal>
       )}
     </section>

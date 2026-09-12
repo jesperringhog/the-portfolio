@@ -20,7 +20,7 @@ export const NavBtn = ({ href, defaultClass, children }: NavBtnProps) => {
       rounded-[0%] transition-all duration-300 ease-in-out ${
         isActive
           ? `bg-foreground text-primary font-bold rounded-[100] cursor-default`
-          : `hover:bg-foreground hover:text-primary hover:font-bold ${defaultClass}`
+          : `hover:bg-foreground hover:text-accent-primary hover:font-bold ${defaultClass}`
       }
       `}
     >

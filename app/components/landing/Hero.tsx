@@ -8,7 +8,7 @@ export const Hero = () => (
   >
     <Heading />
     <article
-      className="lg:mx-10 flex flex-col-reverse lg:flex-row-reverse
+      className="flex flex-col-reverse lg:flex-row-reverse
       justify-center items-center md:gap-5 xl:gap-0"
     >
       <Image

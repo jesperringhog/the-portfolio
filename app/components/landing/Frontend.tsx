@@ -8,7 +8,7 @@ import { ProjectImg } from "./ProjectImg";
 
 export const Frontend = () => (
   <section id="frontend">
-    <div className="lg:px-10 lg:mb-10 flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <PolygonHeading polygonClass="bg-project lg:rounded-t-xl">
         Frontend
       </PolygonHeading>
@@ -27,7 +27,7 @@ export const Frontend = () => (
               p-3 md:rounded-t-xl transition-colors duration-500"
             >
               <p
-                className="font-bold text-project transition-colors duration-500"
+                className="font-bold text-project group-hover:text-accent-primary transition-colors duration-500"
               >
                 {p.title}
               </p>
@@ -39,19 +39,19 @@ export const Frontend = () => (
               <LinkComponent
                 href={p.github}
                 reactIcon={FaGithub}
-                iconClass="fill-project"
+                iconClass="fill-project hover:fill-accent-primary"
               />
               {p.figma && (
                 <LinkComponent
                   href={p.figma}
                   reactIcon={FaFigma}
-                  iconClass="fill-project"
+                  iconClass="fill-project hover:fill-accent-primary"
                 />
               )}
               <LinkComponent
                 href={p.vercel}
                 reactIcon={BsArrowsFullscreen}
-                iconClass="fill-project"
+                iconClass="fill-project hover:fill-accent-primary"
               />
             </div>
           </article>

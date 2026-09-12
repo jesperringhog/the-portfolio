@@ -18,10 +18,10 @@ export const CvSkills = () => (
               {skill.icon ? (
                 <IconComponent
                   reactIcon={skill.icon}
-                  iconClass="my-3 ml-0 text-project"
+                  iconClass="my-3 ml-0 text-accent-primary"
                 />
               ) : (
-                <p className="pr-5 text-5xl">&bull;</p>
+                <p className="pr-5 text-5xl text-accent-primary">&bull;</p>
               )}
               <p>{skill.name}</p>
             </li>

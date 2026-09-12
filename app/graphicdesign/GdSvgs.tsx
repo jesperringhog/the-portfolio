@@ -41,7 +41,7 @@ export const GdSvgs = ({
       <PolygonHeading children={children} polygonClass={polygonClass} />
       <div
         className={`w-full p-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10
-          lg:rounded-b-xl xl:rounded-none 2xl:rounded-xl ${containerClass}`}
+          lg:rounded-b-xl xl:rounded-xl ${containerClass}`}
       >
         {svgs.map(({ component: Logo, title }, i) => (
           <button

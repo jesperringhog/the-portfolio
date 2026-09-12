@@ -7,8 +7,8 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaGithub,
+  FaFigma,
 } from "react-icons/fa";
-import { FiFigma } from "react-icons/fi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs, SiExpress, SiMongodb } from "react-icons/si";
 import { SkillCategory } from "../models/Skill";
@@ -26,7 +26,7 @@ export const skillIcons = [
   BsBootstrapFill,
   FaGitAlt,
   FaGithub,
-  FiFigma,
+  FaFigma,
   DiPhotoshop,
   DiIllustrator,
 ];
@@ -61,7 +61,7 @@ export const skills: SkillCategory[] = [
     skills: [
       { name: "Git", icon: FaGitAlt },
       { name: "GitHub", icon: FaGithub },
-      { name: "Figma", icon: FiFigma },
+      { name: "Figma", icon: FaFigma },
     ],
   },
   {

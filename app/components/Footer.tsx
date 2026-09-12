@@ -12,14 +12,17 @@ export const Footer = () => (
       <LinkComponent
         href="https://github.com/jesperringhog"
         reactIcon={FaGithub}
+        iconClass="hover:fill-accent-secondary"
       />
       <LinkComponent
         href="https://www.linkedin.com/in/jesper-ringh%C3%B6g-649104125/"
         reactIcon={FaLinkedin}
+        iconClass="hover:fill-accent-secondary"
       />
       <LinkComponent
         href="mailto:jesper.ringhog@gmail.com"
         reactIcon={FaEnvelope}
+        iconClass="hover:fill-accent-secondary"
       />
     </div>
     <div className="flex md:flex-1 justify-center items-center text-center">

@@ -8,7 +8,7 @@ export default function Cv() {
   return (
     <section className="flex flex-1 flex-col">
       <CvHeader />
-      <div className="lg:p-10 flex flex-col md:flex-row flex-wrap lg:gap-10">
+      <div className="lg:pt-10 flex flex-col md:flex-row flex-wrap lg:gap-10">
         <div className="flex-1">
           <CvSummary />
           <CvEducation />
