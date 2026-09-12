@@ -3,4 +3,6 @@ export type FeProject = {
     vercel: string;
     github: string;
     figma?: string;
+    desktopImg: string;
+    mobileImg: string;
 }

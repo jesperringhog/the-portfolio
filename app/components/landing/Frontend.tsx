@@ -3,21 +3,23 @@ import { BsArrowsFullscreen } from "react-icons/bs";
 import { FaFigma, FaGithub } from "react-icons/fa";
 import { LinkComponent } from "../buttons/LinkComponent";
 import { PolygonHeading } from "../PolygonHeading";
+import Image from "next/image";
+import { ProjectImg } from "./ProjectImg";
 
 export const Frontend = () => (
   <section id="frontend">
-    <div className="lg:px-10 xl:p-0 flex flex-col items-center">
+    <div className="lg:px-10 lg:mb-10 flex flex-col items-center">
       <PolygonHeading polygonClass="bg-project lg:rounded-t-xl">
         Frontend
       </PolygonHeading>
       <div
-        className="w-full py-10 p-10 md:p-20 flex flex-col lg:flex-row flex-wrap justify-center items-center 
-      gap-10 bg-project lg:rounded-b-xl xl:rounded-none 2xl:rounded-xl"
+        className="w-full py-10 p-10 grid md:grid-cols-2 justify-center items-center 
+      gap-5 lg:gap-10 bg-project lg:rounded-b-xl xl:rounded-xl"
       >
         {feProjects.map((p, i) => (
           <article
             key={i}
-            className="w-full h-100 flex flex-col flex-1 hover:scale-101 drop-shadow-xl bg-foreground hover:bg-background
+            className="flex flex-col hover:scale-101 drop-shadow-xl bg-foreground
             transition-all duration-500 rounded-xl group"
           >
             <div
@@ -25,31 +27,31 @@ export const Frontend = () => (
               p-3 md:rounded-t-xl transition-colors duration-500"
             >
               <p
-                className="font-bold text-project group-hover:text-foreground transition-colors duration-500"
+                className="font-bold text-project transition-colors duration-500"
               >
                 {p.title}
               </p>
             </div>
-            <iframe src={p.vercel} className="flex-1"></iframe>
+            <ProjectImg project={p} />
             <div
               className="flex justify-end items-center md:rounded-b-xl transition-colors duration-500"
             >
               <LinkComponent
                 href={p.github}
                 reactIcon={FaGithub}
-                iconClass="fill-project group-hover:fill-foreground"
+                iconClass="fill-project"
               />
               {p.figma && (
                 <LinkComponent
                   href={p.figma}
                   reactIcon={FaFigma}
-                  iconClass="fill-project group-hover:fill-foreground"
+                  iconClass="fill-project"
                 />
               )}
               <LinkComponent
                 href={p.vercel}
                 reactIcon={BsArrowsFullscreen}
-                iconClass="fill-project group-hover:fill-foreground"
+                iconClass="fill-project"
               />
             </div>
           </article>
