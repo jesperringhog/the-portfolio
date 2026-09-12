@@ -6,8 +6,8 @@
   --primary: #f1f0ea;
   --secondary: #dddbd5;
   --project: #f1f0ea;
-  --accent-primary: #ffec82;
-  --accent-secondary: #8c8347;
+  --accent-primary: #fff09a;
+  --accent-secondary: #8d8555;
   --secondary-text: #686868;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     sans-serif;
@@ -35,8 +35,8 @@
     --primary: #181817;
     --secondary: #282826;
     --project: #181817;
-    --accent-primary: #8c8347;
-    --accent-secondary: #ffec82;
+    --accent-primary: #8d8555;
+    --accent-secondary: #fff09a;
     --secondary-text: #aaaaaa;
   }
 }
