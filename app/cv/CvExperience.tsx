@@ -38,7 +38,7 @@ export const CvExperience = ({ variant, heading }: CvExperienceProps) => {
               {e.location}
               <span
                 className={
-                  isEmployment ? "text-accent-secondary" : "text-accent-primary"
+                  isEmployment ? "text-secondary-text" : "text-background"
                 }
               >
                 {" "}
