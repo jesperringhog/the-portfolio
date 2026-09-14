@@ -41,7 +41,7 @@ export const GdSvgs = ({
       <PolygonHeading children={children} polygonClass={polygonClass} />
       <div
         className={`w-full p-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10
-          lg:rounded-b-xl xl:rounded-xl ${containerClass}`}
+          lg:rounded-b-xl xl:rounded-none ${containerClass}`}
       >
         {svgs.map(({ component: Logo, title }, i) => (
           <button
@@ -50,7 +50,7 @@ export const GdSvgs = ({
             className="cursor-pointer"
           >
             <Logo
-              className={`w-full h-auto p-6 group text-foreground rounded-xl hover:scale-105
+              className={`w-full h-auto p-6 group text-foreground rounded-xl xl:rounded-none hover:scale-105
             hover:drop-shadow-xl transition-all duration-300
             ${logoClass}`} />
           </button>

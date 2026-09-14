@@ -31,7 +31,7 @@ export const GdModal = ({
   return (
     <div
       className={`mx-5 md:mx-10 xl:mx-[5%] my-45 lg:my-25
-    rounded-t-xl drop-shadow-xl fixed inset-0 z-100 ${modalContainerClass}`}
+    rounded-t-xl xl:rounded-none drop-shadow-xl fixed inset-0 z-100 ${modalContainerClass}`}
     >
       <button
         onClick={onClose}
@@ -52,7 +52,7 @@ export const GdModal = ({
         <IconComponent reactIcon={FaArrowCircleRight} iconClass={iconClass} />
       </button>
       <div className="w-full h-full p-5 flex justify-center">{children}</div>
-      <p className={`p-5 2xl:text-2xl text-center font-bold rounded-b-xl ${modalTitleClass}`}>
+      <p className={`p-5 2xl:text-2xl text-center font-bold rounded-b-xl xl:rounded-none ${modalTitleClass}`}>
         {title}
       </p>
     </div>

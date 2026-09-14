@@ -18,22 +18,26 @@ export const Hero = () => (
         height={200}
         loading="eager"
         className={
-          "w-full md:w-auto h-full md:h-70 xl:h-full md:rounded-full xl:rounded-none xl:rounded-r-xl sepia-10"
+          "w-full md:w-auto h-full md:h-70 xl:h-full md:rounded-full xl:rounded-none sepia-10"
         }
       />
-      <div className="min-h-80 xl:max-h-80 p-10 md:p-15 bg-project lg:rounded-xl xl:rounded-r-none xl:rounded-l-xl">
+      <div className="min-h-80 xl:max-h-80 p-10 md:p-20 bg-project lg:rounded-xl xl:rounded-none">
         <p className="text-sm md:text-base">
-          <strong>Frontend Developer</strong>-student med bakgrund inom grafisk
-          design och UX. Jag trivs bäst när jag får kombinera teknik med kreativ
-          problemlösning och skapa webbupplevelser som är både funktionella och
-          genomtänkta. För mig handlar bra frontend om mer än att få något att
-          fungera – det handlar om struktur, tillgänglighet, prestanda och
-          detaljer som gör skillnad för användaren. Jag lägger lika stor vikt
-          vid kodens kvalitet som vid användarens upplevelse och strävar efter
-          att bygga lösningar som är hållbara bakom kulisserna, samtidigt som de
-          känns enkla, intuitiva och visuellt genomarbetade.
+          <strong>Frontend Developer</strong>-student med bakgrund inom <strong>grafisk
+          design</strong> och <strong>UX</strong>.
+          <br />
+          <br />
+          Jag kombinerar teknik och kreativ problemlösning för
+          att skapa funktionella, tillgängliga och genomtänkta webbupplevelser.
         </p>
       </div>
     </article>
+    <a
+      href="/#frontend"
+      className="hidden lg:block px-5 py-2 bg-foreground text-primary font-bold rounded-xl xl:rounded-none 
+    hover:bg-background hover:text-foreground border border-foreground focus:rounded-full transition-all duration-300"
+    >
+      Projekt
+    </a>
   </section>
 );

@@ -6,11 +6,11 @@ type DropDownBtnProps = {
 };
 
 export const DropDownBtn = ({ open, openMenu }: DropDownBtnProps) => (
-  <div className="h-full flex flex-1 items-center xl:hidden">
+  <div className="h-full flex flex-1 justify-end items-center lg:hidden">
     <button
       className={`w-10 ${
         open ? "h-full" : "h-5"
-      } cursor-pointer xl:hidden transition-all duration-300 ease-in-out`}
+      } cursor-pointer lg:hidden transition-all duration-300 ease-in-out`}
       onClick={() => {
         openMenu(!open);
       }}

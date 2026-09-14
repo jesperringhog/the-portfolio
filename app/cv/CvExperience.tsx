@@ -27,7 +27,7 @@ export const CvExperience = ({ variant, heading }: CvExperienceProps) => {
         <div key={i}>
           <h4
             className={`font-bold underline underline-offset-2 
-          ${isEmployment ? "text-accent-secondary" : "text-accent-primary"}`}
+          ${isEmployment ? "text-secondary-text" : "text-background"}`}
           >
             <i>{e.company}</i>
           </h4>

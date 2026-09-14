@@ -14,9 +14,9 @@ export const Header = () => {
 
   return (
     <>
-      <header className="w-full h-20 px-[10%] py-5 bg-primary xl:[clip-path:polygon(0%_0%,100%_0%,95%_100%,5%_100%)] fixed z-999">
-        <nav className="w-full h-full flex gap-10 md:gap-20 justify-center items-center max-h-10">
-          <div className="xl:hidden flex-1"></div>
+      <header className="w-full h-20 px-10 xl:px-[10%] py-5 bg-primary xl:[clip-path:polygon(0%_0%,100%_0%,95%_100%,5%_100%)] fixed z-999">
+        <nav className="w-full h-full flex gap-10 md:gap-20 justify-between lg:justify-center items-center max-h-10">
+          <div className="lg:hidden flex-1"></div>
           <NavBtn
             href="/graphicdesign"
             children="Grafisk design"

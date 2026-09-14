@@ -9,13 +9,13 @@ export const Skills = () => (
     </PolygonHeading>
     <div
       className="w-full px-10 md:px-15 py-5 flex flex-wrap justify-center text-project bg-foreground 
-        md:rounded-b-xl xl:rounded-xl group"
+        md:rounded-b-xl xl:rounded-none group"
     >
       {skills.map((s, i) => (
         <div key={i} className="flex flex-wrap">
           {s.skills.map((skill, i) =>
             skill.icon ? (
-              <IconComponent key={i} reactIcon={skill.icon!} iconClass="group-hover:fill-accent-primary"/>
+              <IconComponent key={i} reactIcon={skill.icon!} />
             ) : null,
           )}
         </div>

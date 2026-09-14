@@ -16,11 +16,11 @@ export const NavBtn = ({ href, defaultClass, children }: NavBtnProps) => {
   return (
     <Link
       href={href}
-      className={`hidden xl:flex flex-1 justify-center items-center h-10
+      className={`hidden lg:flex flex-1 justify-center items-center h-10
       rounded-[0%] transition-all duration-300 ease-in-out ${
         isActive
           ? `bg-foreground text-primary font-bold rounded-[100] cursor-default`
-          : `hover:bg-foreground hover:text-accent-primary hover:font-bold ${defaultClass}`
+          : `hover:bg-foreground hover:text-primary hover:font-bold ${defaultClass}`
       }
       `}
     >

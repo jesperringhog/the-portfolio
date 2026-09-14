@@ -21,7 +21,7 @@ export const CvSection = ({
   >
     <PolygonHeading polygonClass={`lg:rounded-t-xl ${polygonClass}`}>{heading}</PolygonHeading>
     <article
-      className={`p-10 text-xs md:text-sm lg:text-base lg:rounded-b-xl xl:rounded-xl ${articleClass}`}
+      className={`p-10 text-xs md:text-sm lg:text-base lg:rounded-b-xl xl:rounded-none ${articleClass}`}
     >
       {children}
     </article>

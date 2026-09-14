@@ -21,7 +21,7 @@ export const GdPngs = ({ pngs }: GdPngsProps) => {
       </PolygonHeading>
       <div
         className="p-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6
-    gap-10 bg-primary lg:rounded-b-xl xl:rounded-xl"
+    gap-10 bg-primary lg:rounded-b-xl xl:rounded-none"
       >
         {pngs.map((p, i) => (
           <Image
@@ -30,7 +30,7 @@ export const GdPngs = ({ pngs }: GdPngsProps) => {
             alt={p.alt}
             width={500}
             height={500}
-            className="w-full h-auto hover:scale-105 hover:drop-shadow-xl transition-all duration-300 rounded-xl cursor-pointer"
+            className="w-full h-auto hover:scale-105 hover:drop-shadow-xl transition-all duration-300 rounded-xl xl:rounded-none cursor-pointer"
             onClick={() => setSelectedIndex(i)}
           />
         ))}
